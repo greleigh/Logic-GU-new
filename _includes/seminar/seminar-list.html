@@ -26,7 +26,7 @@
       {%- else -%}
       {{ post.excerpt }}
       <details>
-        <summary>expand abstract</summary>
+        <summary>(expand abstract)</summary>
         {{ post.content | remove_first:post.excerpt }}
       </details>
       {%- endif -%}

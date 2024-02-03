@@ -513,6 +513,8 @@ footer.sticky-bottom {
 
   details > summary {
     cursor: pointer;
+    font-style: italic;
+    display: inline;
   }
 
   details summary > * {
