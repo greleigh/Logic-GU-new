@@ -511,6 +511,30 @@ footer.sticky-bottom {
   margin-bottom: 40px;
   padding: 0;
 
+  details > summary {
+    cursor: pointer;
+  }
+
+  details summary > * {
+    display: inline;
+  }
+
+  summary::-webkit-details-marker {
+    display:none;
+ }
+
+  details[open] summary {
+    display: none;
+  }
+
+  details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+  }
+  @keyframes sweep {
+    0%    {opacity: 0; margin-top: -10px}
+    100%  {opacity: 1; margin-top: 0px}
+  }
+
   li {
     border-bottom: 1px solid var(--global-divider-color);
     list-style: none;
