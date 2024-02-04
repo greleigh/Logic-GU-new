@@ -9,7 +9,7 @@ layout: page
           {{ content }}
           
           {% if page.profiles -%}
-          {% for profile in site.profiles %}
+          {% for profile in page.profiles %}
           <hr>
           <div class="profile float-{%- if profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
             {%- if profile.image %}
@@ -27,7 +27,7 @@ layout: page
                 path = profile_image_path
                 class = profile_image_class
                 sizes = sizes
-                alt = profile.name 
+                alt = profile.image 
               %}
             {% endif -%}
             {%- if profile.more_info %}
@@ -38,10 +38,9 @@ layout: page
           </div>
 
           <div class="clearfix">
-            <h2>{{ profile.name }}</h2>
-            <h3>{{ profile.position }}</h3>
             {% if profile.content -%}
-            {{ profile.content | markdownify }}
+            {% capture profile_content %}{%- include_relative {{ profile.content }} %}{% endcapture %}
+            {{ profile_content | markdownify }}
             {%- else -%}
             {{ content }}
             {%- endif %}

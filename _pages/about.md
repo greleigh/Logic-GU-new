@@ -22,7 +22,7 @@ Information about our research and activities can be found through the links to 
 More detailed information is available through the personal pages of group members and our homepage at the University of Gothenburg.
 
 Plans for site:
-- 'activities' page like [this](https://logic-gu.se/activities)
+- 'activities' page like [this](https://logic-gu.se/activities).
 - 'internal' page(s) with useful links?
 
 Plans for this page: 
