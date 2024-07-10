@@ -28,8 +28,7 @@ The programme begins with an in-depth introductory course specifically designed 
 - Proof Theory
 - Model theory
 
-Recently offered elective courses (roughly divided by topic): 
-
+#### Recently offered elective courses (roughly divided by topic)
 
  **Proof theory**
  - Axiomatic theories of truth
