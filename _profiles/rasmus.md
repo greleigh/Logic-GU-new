@@ -4,7 +4,7 @@ short_name: Rasmus
 sort_by: Blanck
 position: Associate Senior Lecturer
 
-align: right
+align: left
 image: rasmus.jpg
 image_circular: false # crops the image to make it circular
 ---

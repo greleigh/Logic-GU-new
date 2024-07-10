@@ -4,7 +4,7 @@ short_name: Fredrik
 sort_by: Engström
 position: Senior Lecturer
 
-align: right
+align: left
 image: fredrik.jpg
 image_circular: false # crops the image to make it circular
 ---

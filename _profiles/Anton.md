@@ -1,12 +1,10 @@
 ---
-name: Graham E Leigh
-short_name: Graham
-sort_by: Leigh
-position: Senior Lecturer
+name: Anton Pertun Broberg
+short_name: Anton
+sort_by: Broberg
+position: PhD student
 
-align: right
+align: left
 image: prof_pic.jpg
 image_circular: false # crops the image to make it circular
 ---
-My research interests concern the interface between the three facets of logic: mathematical, philosophical and computational logic.
-I have worked in proof theory, theories of truth, non-classical logics, computational content of logics, and modal logic.
