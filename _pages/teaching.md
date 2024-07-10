@@ -19,7 +19,7 @@ The programme starts with a number of core courses, common for all students, whi
 
 
 ### Programme structure and content
-The programme begins with an in-depth introductory course specifically designed to give students from diverse backgrounds the foundational knowledge needed. There are six mandatory courses providing core knowledge:
+The programme begins with an in-depth introductory course specifically designed to give students from diverse backgrounds the foundational knowledge needed. There are six **mandatory courses** providing core knowledge:
 
 - Logical Theory
 - Set Theory
@@ -28,8 +28,7 @@ The programme begins with an in-depth introductory course specifically designed 
 - Proof Theory
 - Model theory
 
-##### Eelective courses
-Next to the mandatory courses, the program offers a broad and dynamic collection of elective courses. Below you find a list of elective courses that were recently offered at our master, roughly sorted by topic. Notice that we can't guarantee that these courses will be offered during your stay.
+Next to the mandatory courses, the program offers a broad and dynamic collection of **elective courses**. Below you find a list of elective courses that were offered in the recent past at our master, roughly sorted by topic. Notice that we can't guarantee that these courses will be offered during your stay.
 
  **Proof theory**
  - Axiomatic theories of truth
