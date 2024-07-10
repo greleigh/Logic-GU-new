@@ -41,15 +41,17 @@ The programme begins with an in-depth introductory course specifically designed 
  - Functorial Semantics
  - Introduction to topos theory 
 
+ **Semantics**
+ - Models of computation 
+ - Logic, Games and automata
+
  **Philosophical logic**
  - Philosophy of mathematics
  - History of logic
  - Human reasoning and cognitive science 
  - Decision theory
 
- **Semantics**
- - Models of computation, 
- - Logic, Games and automata.
+
 
 You’re also encouraged to choose elective courses taught at partner departments. You will receive guidance to help build a profile matching your individual plans for your future career. Seminars, peer review, and supervising will assist you in writing your thesis, which is an in-depth exploration of a topic of your choice.
 
