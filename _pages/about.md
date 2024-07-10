@@ -17,7 +17,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-Welcome to the webpage of the logic group at the University of Gothenburg.
+Welcome to the webpage of the Logic group at the University of Gothenburg.
 Information about our research and activities can be found through the links to the left.
 More detailed information is available through the personal pages of group members and our homepage at the University of Gothenburg.
 
