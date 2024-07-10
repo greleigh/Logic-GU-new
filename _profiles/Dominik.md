@@ -1,12 +1,11 @@
 ---
-name: Graham E Leigh
-short_name: Graham
-sort_by: Leigh
-position: Senior Lecturer
+name: Dominik Wehr
+short_name: Dominik
+sort_by:  Wehr
+position: PhD Student
 
-align: right
-image: prof_pic.jpg
+align: left
+image: dominik.jpg
 image_circular: false # crops the image to make it circular
 ---
-My research interests concern the interface between the three facets of logic: mathematical, philosophical and computational logic.
-I have worked in proof theory, theories of truth, non-classical logics, computational content of logics, and modal logic.
+I am interested in the exploration of foundational systems by means of proof theory and (constructive) reverse mathematics. At the moment I work in cyclic proof theory, focusing on the soundness conditions of cyclic derivation systems.

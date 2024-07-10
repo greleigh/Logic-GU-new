@@ -4,7 +4,7 @@ short_name: Martin
 sort_by: Kaså
 position: Senior Lecturer
 
-align: right
+align: left
 image: martin.jpg
 image_circular: false # crops the image to make it circular
 ---
