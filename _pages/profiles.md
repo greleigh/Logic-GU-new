@@ -37,7 +37,3 @@ profiles:
       <p>123 your address street</p>
       <p>Your City, State 12345</p>
 ---
-
-Proposal:
-- use external file to store personal information (presently in header of this file)
-- Add links to personal GU pages

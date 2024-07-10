@@ -2,7 +2,7 @@
 name: Ivan Di Liberti
 short_name: Ivan
 sort_by: Di Liberti
-position: Postdoc
+position: Postdoctoral Researcher
 
 align: left
 image: ivan.jpg
