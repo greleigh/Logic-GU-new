@@ -13,7 +13,7 @@ The purpose of the Master’s Programme in Logic is to provide a new generation 
 
 The main goal is that students, after successful completion of the programme, will have a coherent training and thorough understanding of the theoretical fundamentals of the subject of logic itself, its general role in the sciences and humanities, as well as its applications in fields like philosophy, linguistics, mathematics and computer science. Students will be well prepared for a career of research and development in logic and its applications, both in academia and industry.
 
-![In 2024 our Logic Group hosted the Logic Colloquium, the most important conference in Logic in Europe, and many master students were involved in the organisation.](../assets/img/student_cooperating.jpeg)
+![In 2024 our Logic Group hosted the Logic Colloquium, the most important conference in Logic in Europe, and many master students were involved in the organisation.](../assets/img/student_cooperating.jpg)
 
 The programme starts with a number of core courses, common for all students, which provide a solid foundation in the fundamentals of theoretical logic and its applications, and then follow elective courses, tailored to the background, interests and career plans for individual students.
 
@@ -28,10 +28,9 @@ The programme begins with an in-depth introductory course specifically designed 
 - Proof Theory
 - Model theory
 
-Next to the mandatory courses, the program offers a broad and dynamic collection of **elective courses**. Below you find a list of elective courses that were offered in the recent past at our master, roughly sorted by topic. Notice that we can't guarantee that these courses will be offered during your stay.
+Next to the mandatory courses, the program offers a broad and dynamic collection of **elective courses**. Below you find a list of elective courses that were offered in the recent past at our master, roughly sorted by topic. Note that we can't guarantee that these courses will be offered during your stay.
 
- **Proof theory**
- - Axiomatic theories of truth
+ **Proof Theory**
  - Lambda calculus and type theory
  - Quantified modal logic, Dependence logic 
  - Provability logic
@@ -39,17 +38,19 @@ Next to the mandatory courses, the program offers a broad and dynamic collection
  **Categorical Logic**
  - Category theory 
  - Functorial Semantics
- - Introduction to topos theory 
+ - Introduction to Topos Theory 
 
- **Semantics**
+ **Logic and Computation**
  - Models of computation 
  - Logic, Games and automata
+ - Decision theory
 
- **Philosophical logic**
+ **Logic in Philosophy**
  - Philosophy of mathematics
  - History of logic
- - Human reasoning and cognitive science 
- - Decision theory
+ - Human reasoning and cognitive science
+ - Axiomatic theories of truth 
+ 
 
 
 

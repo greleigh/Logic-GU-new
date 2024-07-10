@@ -1,8 +1,8 @@
 ---
 layout: profiles
 permalink: /group/
-title: Group
-description: members of the lab or group
+title: People
+description: members of the Logic group
 nav: true
 nav_order: 1
 
