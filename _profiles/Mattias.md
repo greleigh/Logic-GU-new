@@ -4,7 +4,7 @@ short_name: Graham
 sort_by: Leigh
 position: Senior Lecturer
 
-align: left
+align: right
 image: prof_pic.jpg
 image_circular: false # crops the image to make it circular
 ---
