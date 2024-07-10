@@ -3,6 +3,7 @@ name: Ivan Di Liberti
 short_name: Ivan
 sort_by: Di Liberti
 position: Postdoctoral Researcher
+homepage: https://diliberti.github.io
 
 align: left
 image: ivan.jpg
