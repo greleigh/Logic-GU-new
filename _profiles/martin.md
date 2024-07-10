@@ -1,12 +1,11 @@
 ---
-name: Graham E Leigh
-short_name: Graham
-sort_by: Leigh
+name: Martin Kaså
+short_name: Martin
+sort_by: Kaså
 position: Senior Lecturer
 
 align: right
-image: prof_pic.jpg
+image: martin.jpg
 image_circular: false # crops the image to make it circular
 ---
-My research interests concern the interface between the three facets of logic: mathematical, philosophical and computational logic.
-I have worked in proof theory, theories of truth, non-classical logics, computational content of logics, and modal logic.
+My background is in philosophical logic, with a focus on formal systems for trial-and-error processes. Recently, my research interests have shifted somewhat towards argumentation theory and (logical) philosophy of language. In particular the application of foundational theories in philosophical semantics and pragmatics to practically useful argumentation analysis.

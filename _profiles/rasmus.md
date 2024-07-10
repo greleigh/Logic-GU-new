@@ -1,12 +1,11 @@
 ---
-name: Graham E Leigh
-short_name: Graham
-sort_by: Leigh
-position: Senior Lecturer
+name: Rasmus Blanck
+short_name: Rasmus
+sort_by: Blanck
+position: Associate Senior Lecturer
 
 align: right
-image: prof_pic.jpg
+image: rasmus.jpg
 image_circular: false # crops the image to make it circular
 ---
-My research interests concern the interface between the three facets of logic: mathematical, philosophical and computational logic.
-I have worked in proof theory, theories of truth, non-classical logics, computational content of logics, and modal logic.
+My research interests lie close to logic, philosophy, and linguistics. In particular, I have been working on the metamathematics of arithmetic, philosophy of mathematics, formal semantics and probabilistic semantics for natural language.

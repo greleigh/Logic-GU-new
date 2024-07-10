@@ -1,12 +1,11 @@
 ---
-name: Graham E Leigh
-short_name: Graham
-sort_by: Leigh
+name: Fredrik Engström
+short_name: Fredrik
+sort_by: Engström
 position: Senior Lecturer
 
 align: right
-image: prof_pic.jpg
+image: fredrik.jpg
 image_circular: false # crops the image to make it circular
 ---
-My research interests concern the interface between the three facets of logic: mathematical, philosophical and computational logic.
-I have worked in proof theory, theories of truth, non-classical logics, computational content of logics, and modal logic.
+Early research on models of arithmetic including compositional theories of truth and transplendent models. Later, focus shifted towards Dependence logic and generalized quantifiers as well as the characterization of logical constants. Also interested in the cognitive aspects of logical reasoning.

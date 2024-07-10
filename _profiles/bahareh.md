@@ -5,7 +5,7 @@ sort_by: Afshari
 position: Senior Lecturer
 
 align: left
-image: prof_pic.jpg
+image: bahareh.jpg
 image_circular: false # crops the image to make it circular
 ---
 My expertise is in proof theory and its application to computational logic. I am particularly interested in expressibility, complexity, and deductive strength in fixed point logics. Other topics that I have worked on and/or are currently pursuing include relative computability, reverse mathematics, ordinal analysis, computational content of proofs, automata theory and games.
