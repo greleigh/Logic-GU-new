@@ -2,7 +2,7 @@
 layout: page
 permalink: /teaching/
 title: Master in Logic
-description: Materials for courses you taught. Replace this text with your description.
+description: Come learn Logic with us!
 nav: true
 nav_order: 6
 ---
