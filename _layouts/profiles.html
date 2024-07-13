@@ -3,53 +3,59 @@ layout: page
 ---
 
 <!-- about.html -->
-      <div class="post">
+<div class="post">
 
-        <article>
-          {{ content }}
-          
-          {% if page.profiles -%}
-          {% for profile in site.profiles %}
-          <hr>
-          <div class="profile float-{%- if profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
-            {%- if profile.image %}
-              {%- assign profile_image_path = profile.image | prepend: 'assets/img/' -%}
+<article>
+  {{ content }}
+  
+  {% if page.profiles -%}
+    {% assign position-names = site.data.aliases.profiles %}
+    {% for position in page.profile-order %}
+      {% assign profiles = site.profiles | where:"position",position | sort: "sort_by" %}
+      {% for profile in profiles %}
+      {% unless profile.hide %}
+        <hr>
+        <div class="profile float-{%- if profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
+          {%- if profile.image -%}
+            {%- assign profile-image = profile.image -%}
+          {%- else -%}
+            {%- assign profile-image = "blank.jpg" -%}
+          {%- endif -%}
+          {%- assign profile_image_path = profile-image | prepend: site.people_img_prefix -%}
 
-              {% if profile.image_circular %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
-              {% else %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
-              {% endif %}
+          {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
 
-              {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
+          {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
 
-              {% include figure.html
-                path = profile_image_path
-                class = profile_image_class
-                sizes = sizes
-                alt = profile.name 
-              %}
-            {% endif -%}
-            {%- if profile.more_info %}
-            <div class="more-info">
-              {{ profile.more_info }}
-            </div>
-            {%- endif %}
+          {% include figure.html
+            path = profile_image_path
+            class = profile_image_class
+            sizes = sizes
+            alt = profile.name 
+          %}
+          {%- if profile.more_info %}
+          <div class="more-info">
+            {{ profile.more_info }}
           </div>
-
-          <div class="clearfix">
-            <h2>{{ profile.name }}</h2>
-            <h3>{{ profile.position }}</h3>
-            {% if profile.content -%}
-            {{ profile.content | markdownify }}
-            {%- else -%}
-            {{ content }}
-            {%- endif %}
-            <p><a href="{{ profile.homepage }}">Personal webpage</a></p>
-          </div>
-
-          {% endfor %}
           {%- endif %}
-        </article>
+        </div>
+
+        <div class="clearfix">
+          <h2>{{ profile.name }}</h2>
+          <h3>{{ position-names[profile.position] }}</h3>
+          {% if profile.content -%}
+            {{ profile.content | markdownify }}
+          {%- else -%}
+            {{ content }}
+          {%- endif %}
+          {% if profile.homepage %}
+            <p><a href="{{ profile.homepage }}">Personal webpage</a></p>
+          {% endif %}
+        </div>
+      {% endunless %}
+      {% endfor %}
+    {% endfor %}
+  {%- endif %}
+</article>
 
 </div>

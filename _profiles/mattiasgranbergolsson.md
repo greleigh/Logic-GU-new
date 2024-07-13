@@ -2,9 +2,10 @@
 name: Mattias Granberg Olsson
 short_name: Mattias
 sort_by: Olsson
-position: PhD Student
+position: phd
+homepage: https://www.gu.se/en/about/find-staff/mattiasgranbergolsson
 
-align: left
+
 image: mattias.jpg
-image_circular: false # crops the image to make it circular
+
 ---
