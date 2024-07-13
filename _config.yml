@@ -26,7 +26,8 @@ impressum_path:  # set to path to include impressum link in the footer, use the 
 # -----------------------------------------------------------------------------
 # Locations
 # -----------------------------------------------------------------------------
-people_img_prefix: 'assets/img/people/'
+image_dir: 'assets/img/'
+people_img_dir: 'assets/img/people/'
 
 # -----------------------------------------------------------------------------
 # Theme
@@ -176,7 +177,7 @@ external_sources:
 collections:
   news:
     output: true
-    permalink: /news/:path/
+    permalink: /announcements/:path/
   projects:
     output: true
     permalink: /projects/:path/

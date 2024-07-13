@@ -21,7 +21,7 @@ layout: page
           {%- else -%}
             {%- assign profile-image = "blank.jpg" -%}
           {%- endif -%}
-          {%- assign profile_image_path = profile-image | prepend: site.people_img_prefix -%}
+          {%- assign profile_image_path = profile-image | prepend: site.people_img_dir -%}
 
           {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
 
