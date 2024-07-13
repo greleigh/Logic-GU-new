@@ -4,7 +4,11 @@ permalink: /teaching/
 title: Master in Logic
 description: Come learn Logic with us!
 nav: true
-nav_order: 6
+nav_order: 5
+
+image: poster.png
+image_alt: You should study Logic iff this sentence is true.
+image_link: _pages/poster.md
 ---
 
 Our research group powers the Master’s programme in Logic offered at the University of Gothenburg. For full details and application procedure, see the official webpage of [the Master’s Programme in Logic](https://www.gu.se/en/study-gothenburg/logic-masters-programme-h2log).  Do check out our [poster](https://logic-gu.se/poster)!
@@ -13,7 +17,7 @@ The purpose of the Master’s Programme in Logic is to provide a new generation 
 
 The main goal is that students, after successful completion of the programme, will have a coherent training and thorough understanding of the theoretical fundamentals of the subject of logic itself, its general role in the sciences and humanities, as well as its applications in fields like philosophy, linguistics, mathematics and computer science. Students will be well prepared for a career of research and development in logic and its applications, both in academia and industry.
 
-![In 2024 our Logic Group hosted the Logic Colloquium, the most important conference in Logic in Europe, and many master students were involved in the organisation.](../assets/img/student_cooperating.jpg)
+![In 2024 our Logic Group hosted the Logic Colloquium, the most important conference in Logic in Europe, and many master students were involved in the organisation.](../assets/img/students_cooperating.jpg)
 
 The programme starts with a number of core courses, common for all students, which provide a solid foundation in the fundamentals of theoretical logic and its applications, and then follow elective courses, tailored to the background, interests and career plans for individual students.
 
