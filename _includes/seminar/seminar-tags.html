@@ -14,7 +14,7 @@
         {% endif %}
         {% for category in site.display_categories %}
           <li>
-            <i class="fa-solid fa-tag fa-sm"></i> <a href="{{ category | slugify | prepend: '/event/category/' | relative_url }}">{{ site.data.aliases.category_names[category] }}</a>
+            <i class="fa-solid fa-tag fa-sm"></i> <a href="{{ category | slugify | prepend: '/event/category/' | relative_url }}">{% include snippets/print_category_name.liquid category=category %}</a>
           </li>
           {% unless forloop.last %}
             <p>&bull;</p>

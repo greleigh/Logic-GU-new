@@ -6,12 +6,9 @@ description: A list of our activities
 nav: true
 nav_order: 6
 ---
-<!-- _pages/publications.md -->
-Think about publications too.
-Base this on the webscrape already implemented.
 
-<div class="publications">
+This should be like [this page](https://www.logic-gu.se/activities) with notable changes:
 
-{% bibliography -f {{ site.scholar.bibliography }} %}
+1. Use a collection for activities
+2. How should these be merged/overlap with the [list of events]({{ '/event/event' | relative_url }}).
 
-</div>

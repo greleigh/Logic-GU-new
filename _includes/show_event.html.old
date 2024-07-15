@@ -1,6 +1,8 @@
 {% assign event = include.event %}
 {%- assign main_cat = event.categories | first -%}
-{{ site.data.aliases.category_names[main_cat] }},
+{% include snippets/print_category_name.liquid 
+  category=main_cat 
+%},
 {% if event.redirect == blank %}
   <a class="news-title" href="{{ event.url | relative_url }}">{{ event.title }}</a>
 {% elsif event.redirect contains '://' %}

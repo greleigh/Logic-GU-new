@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Master in Logic in Gothenburg
+title: Master in Logic at Gothenburg
 permalink: /poster/
 description: Should you study Logic?
 
@@ -8,6 +8,7 @@ nav: false
 
 image: poster.png
 image_align: right
+image_link: /assets/pdf/poster.pdf
 ---
 {% assign mil = site.data.links['MiL'].url %}
 

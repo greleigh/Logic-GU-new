@@ -47,32 +47,6 @@ layout: default
     {%- endif %}
 
     <!-- Latest posts -->
-    {% if false -%}
-    {% assign build-date = site.time %}
-    <h2><a href="{{ '/seminars/' | relative_url }}" style="color: inherit;">Upcoming events</a></h2>
-    {%- for category in site.display_categories -%}
-      {% assign cat-name = site.data.aliases.category_names[category] %}
-      {% assign events = site.categories[category] | where_exp:"item", "build-date < item.date" | reverse %}
-      {% if events %}
-        {% assign event = events | first %}
-      <h3><a href="{{ '/event/category/' | append: category  | relative_url }}" style="color: inherit;">{{ cat-name }}</a></h3>
-      {{ event.title }}
-      {%- include show_event.html
-        event=event
-        description-only = true
-        show-category = false
-      %}
-      {% endif %}
-    {%- endfor -%}
-    {%- endif %}
-
-    <!-- Latest posts -->
-    {% if false -%}
-      <h2><a href="{{ '/seminars/' | relative_url }}" style="color: inherit;">Upcoming seminars and events</a></h2>
-      {%- include upcoming_events.html %}
-    {%- endif %}
-
-    <!-- Latest posts -->
     {% if page.upcoming -%}
       <h2><a href="{{ '/seminars/' | relative_url }}" style="color: inherit;">Upcoming seminars and events</a></h2>
       {% assign build-date = site.time %}

@@ -16,5 +16,6 @@ profile-order:
   - phd
   - visitor
 
-
 ---
+
+__TODO: Include publication listings, on separate page?__
