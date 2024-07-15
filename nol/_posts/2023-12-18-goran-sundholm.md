@@ -4,7 +4,6 @@ affil: Leiden University
 title: "Curry-Howard: a meaning explanation or just another realizability interpretation?"
 date: 2023-12-18 16:00:00 +01:00
 location: zoom
-category: NOL Seminar
 ---
 Around 1930 a major paradigm shift occurred in the foundations of mathematics; we may call it the METAMATHEMATICAL TURN. Until then the task of a logician had been to design and explain a full-scale formal language that was adequate for the practice of mathematical analysis in such a way that the axioms and rules of inference of the theory were rendered evident by the explanations.
 <!--more-->

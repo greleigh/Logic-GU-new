@@ -1,9 +1,8 @@
 ---
-speaker: World Logic Day Pub Quiz
+speaker: 
 affil: 
-title:
+title: World Logic Day 2024
 date: 2024-01-14 17:30:00 +01:00
-category: event
 ---
 
 The Logic Group at the University of Gothenburg hosts its annual World Logic Day Pub Quiz.

@@ -7,7 +7,6 @@ tags: ["LL","LL24"]
 ll_year: 2024
 ll_kind: research
 location:  J439
-category: Lindström Lecture
 featured: true
 ---
 A classical result by Lovász asserts that two graphs G and H are isomorphic if and only if they have the same left profile, that is, for every graph F, the number of homomorphisms from F to G coincides with the number of homomorphisms from F to H.
