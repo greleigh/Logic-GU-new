@@ -199,7 +199,7 @@ defaults:
       path: ""
       type: "posts"
     values:
-      category: 'Research Seminar'
+      layout: "post"
   - scope:
       path: "assets"
     values:
@@ -209,6 +209,11 @@ announcements:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
+
+upcoming_events:
+  enabled: true
+  scrollable: false # adds a vertical scroll bar if there are more than 3 new posts items
+  limit: 3 # leave blank to include all the blog posts
 
 latest_posts:
   enabled: true
@@ -291,12 +296,17 @@ jekyll-archives:
     tag: archive-tag
     category: archive-category
   permalinks:
-    year: '/blog/:year/'
-    tag: '/blog/tag/:name/'
-    category: '/blog/category/:name/'
+    year: '/event/:year/'
+    tag: '/event/tag/:name/'
+    category: '/event/category/:name/'
 
 # display_tags: ['formatting', 'images', 'links', 'math', 'code'] # these tags will be displayed on the front page of your blog
-display_categories: ['Research Seminar', 'NOL Seminar', 'Lindström Lecture', 'Event'] # these categories will be displayed on the front page of your blog
+display_categories:  # these categories will be displayed on the front page of your blog
+  - seminar
+  - nol
+  - lindstrom-lectures
+  - event
+# display_categories: ['Research Seminar', 'NOL Seminar', 'Lindström Lecture', 'Event'] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar

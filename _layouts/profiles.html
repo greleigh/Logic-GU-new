@@ -41,8 +41,7 @@ layout: page
         </div>
 
         <div class="clearfix profile-description">
-          <h2>{{ profile.name }}</h2>
-          <h3>{{ position-names[profile.position] }}</h3>
+          <h2>{{ profile.name }}, {{ position-names[profile.position] }}</h3>
           {% if profile.content -%}
             {{ profile.content | markdownify }}
           {%- else -%}

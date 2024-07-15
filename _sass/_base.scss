@@ -19,8 +19,10 @@ strong {
   color: var(--global-text-color);
 }
 
-p {
-  text-align: justify;
+.container {
+  p {
+    text-align: justify;
+  }
 }
 
 hr {
@@ -217,7 +219,8 @@ blockquote {
 // Profile
 
 .profile {
-  width: 100%;
+  width: 50%;
+  max-width: 150px;
 
   .more-info {
     margin-bottom: 5px;
@@ -263,7 +266,7 @@ blockquote {
 
 @media (min-width: 576px) {
   .profile {
-    width: 20%;
+    width: 12%;
 
     .address {
       p {
@@ -617,20 +620,29 @@ footer.sticky-bottom {
   li {
     border-bottom: 1px solid var(--global-divider-color);
     list-style: none;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    h2, h3, h4 {
+      text-align: left;
+    }
+
+    .post-footer {
+      color: var(--global-text-color-light);
+      margin-top: 1rem;
+      margin-bottom: 0;
+    }
 
     .post-meta {
-      color: var(--global-text-color-light);
       font-size: 0.875rem;
       margin-bottom: 0;
     }
 
     .post-tags {
-      color: var(--global-text-color-light);
       font-size: 0.875rem;
       padding-top: 0.25rem;
       padding-bottom: 0;
+      margin-bottom: 0;
     }
 
     a {
@@ -1131,6 +1143,8 @@ nav[data-toggle="toc"] {
 }
 
 .featured-posts {
+  text-align: left!important;
+
   a {
     color: var(--global-text-color-light);
     text-decoration: none;
@@ -1140,6 +1154,7 @@ nav[data-toggle="toc"] {
       text-overflow: ellipsis;
       white-space: nowrap;
     }
+
 
     &:hover {
       color: var(--global-theme-color);

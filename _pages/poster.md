@@ -7,19 +7,19 @@ description: Should you study Logic?
 nav: false
 
 image: poster.png
+image_align: right
 ---
 {% assign mil = site.data.links['MiL'].url %}
 
 
 If you are intrigued by logic and have a bachelor's degree in
-Mathematics, Theoretical Philosophy, Computer Science or Linguistics consider
-applying to the [Master in Logic at University of Gothenburg]({{mil}}).
+Mathematics, Philosophy, Computer Science, Linguistics or a related subject, you should consider
+applying to the [Master programme in Logic at University of Gothenburg]({{mil}}).
 
 
 ## You should study logic iff this sentence is true.
 
-
-Observe that "iff" is a short-hand for "if and only if". Let's name the
+Note that "iff" is a short-hand for "if and only if". Let's name the
 sentence $$A$$&nbsp;:
 
 * $$A$$: "You should study logic iff this sentence is true."
@@ -32,7 +32,7 @@ If $$A$$ is true then "$$A$$ is true" is true and therefore "you should study
 logic" is true. But even if $$A$$ is false "you should study logic" has to be
 true. Let's see if we can make sense of this.
 
-## Using propositional logic
+## Using logic
 
 
 We can divide $$A$$ into two less complex statements combined with the

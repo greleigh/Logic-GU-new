@@ -10,6 +10,12 @@ image_more_info:
 
 
 news: true  # includes a list of news items
+upcoming: true # include list of upcoming events
+show_upcoming:
+  - seminar
+  - nol
+  - lindstrom-lectures
+  - event
 latest_posts: true  # includes a list of the newest posts
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
