@@ -22,8 +22,8 @@ social: false  # includes social icons at the bottom of the page
 ---
 
 Welcome to the webpage of the Logic group at the University of Gothenburg.
-Information about our research and activities can be found through the links to the left.
-More detailed information is available through the personal pages of group members and our homepage at the University of Gothenburg.
+Information about our research and activities can be found through the menu at the top.
+More detailed information about our research and activities can be found on the personal pages of [group members]({% link _pages/profiles.md %}) and our [homepage at the University of Gothenburg]({{ site.data.links['flov-logic-group'].url }}).
 
 Plans for site:
 - 'activities' page like [this](https://logic-gu.se/activities).

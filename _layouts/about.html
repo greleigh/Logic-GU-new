@@ -42,35 +42,46 @@ layout: default
 
     <!-- News -->
     {% if page.news and site.announcements.enabled -%}
-      <h2><a href="{{ '/announcements/' | relative_url }}" style="color: inherit;">announcements</a></h2>
+      <h2><a href="{{ '/announcements/' | relative_url }}" style="color: inherit;">Announcements</a></h2>
       {%- include news.html limit=true %}
     {%- endif %}
 
     <!-- Latest posts -->
-    {% if page.latest_posts -%}
-      <h2><a href="{{ '/seminars/' | relative_url }}" style="color: inherit;">latest seminars</a></h2>
-      {%- include latest_posts.html %}
+    {% if false -%}
+    {% assign build-date = site.time %}
+    <h2><a href="{{ '/seminars/' | relative_url }}" style="color: inherit;">Upcoming events</a></h2>
+    {%- for category in site.display_categories -%}
+      {% assign cat-name = site.data.aliases.category_names[category] %}
+      {% assign events = site.categories[category] | where_exp:"item", "build-date < item.date" | reverse %}
+      {% if events %}
+        {% assign event = events | first %}
+      <h3><a href="{{ '/event/category/' | append: category  | relative_url }}" style="color: inherit;">{{ cat-name }}</a></h3>
+      {{ event.title }}
+      {%- include show_event.html
+        event=event
+        description-only = true
+        show-category = false
+      %}
+      {% endif %}
+    {%- endfor -%}
     {%- endif %}
 
-    <!-- Selected papers -->
-    {% if page.selected_papers -%}
-      <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h2>
-      {%- include selected_papers.html %}
+    <!-- Latest posts -->
+    {% if false -%}
+      <h2><a href="{{ '/seminars/' | relative_url }}" style="color: inherit;">Upcoming seminars and events</a></h2>
+      {%- include upcoming_events.html %}
     {%- endif %}
 
-    <!-- Social -->
-    {%- if page.social %}
-      <div class="social">
-        <div class="contact-icons">
-          {% include social.html %}
-        </div>
-
-        <div class="contact-note">
-          {{ site.contact_note }}
-        </div>
-
-      </div>
+    <!-- Latest posts -->
+    {% if page.upcoming -%}
+      <h2><a href="{{ '/seminars/' | relative_url }}" style="color: inherit;">Upcoming seminars and events</a></h2>
+      {% assign build-date = site.time %}
+      {% assign events = site.posts | where_exp:"item", "build-date < item.date or item.featured" | reverse %}
+      {%- include seminar/display_events.html
+        postlist = events
+        %}
     {%- endif %}
+
   </article>
 
 </div>

@@ -22,6 +22,8 @@ strong {
 .container {
   p {
     text-align: justify;
+    margin: 0;
+    padding-bottom: 1rem;
   }
 }
 
@@ -252,7 +254,11 @@ blockquote {
   }
 
   p {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0rem;
+  }
+
+  .profile-footer {
+    // position: absolute;
   }
 }
 
@@ -564,7 +570,7 @@ footer.sticky-bottom {
 .tag-category-list {
   border-bottom: 1px solid var(--global-divider-color);
   text-align: center;
-  padding-top: 1rem;
+  padding-top: 0;
 
   ul {
     justify-content: center;
@@ -576,6 +582,7 @@ footer.sticky-bottom {
       display: inline-block;
       padding: 1rem 0.5rem;
       color: var(--global-text-color-light);
+      margin: 0;
     }
   }
 }
@@ -591,30 +598,35 @@ footer.sticky-bottom {
   margin-bottom: 40px;
   padding: 0;
 
-  details > summary {
-    cursor: pointer;
-    font-style: italic;
-    display: inline;
-  }
+  .post-body {
+    
+    details > summary {
+      cursor: pointer;
+      // font-style: italic;
+      display: inline;
+      mask-image: linear-gradient(180deg, #000 60%, transparent);
+    }
 
-  details summary > * {
-    display: inline;
-  }
+    details summary > * {
+      display: inline;
+    }
 
-  summary::-webkit-details-marker {
-    display:none;
- }
+    summary::-webkit-details-marker {
+      display:none;
+    }
 
-  details[open] summary {
-    display: none;
-  }
+    details[open] summary {
+      // display: none;
+      mask-image: none;
+    }
 
-  details[open] summary ~ * {
-    animation: sweep .5s ease-in-out;
-  }
-  @keyframes sweep {
-    0%    {opacity: 0; margin-top: -10px}
-    100%  {opacity: 1; margin-top: 0px}
+    details[open] summary ~ * {
+      animation: sweep .5s ease-in-out;
+    }
+    @keyframes sweep {
+      0%    {opacity: 0; margin-top: -10px}
+      100%  {opacity: 1; margin-top: 0px}
+    }
   }
 
   li {
@@ -626,6 +638,7 @@ footer.sticky-bottom {
     h2, h3, h4 {
       text-align: left;
     }
+
 
     .post-footer {
       color: var(--global-text-color-light);
@@ -646,7 +659,8 @@ footer.sticky-bottom {
     }
 
     a {
-      color: var(--global-text-color);
+      // color: var(--global-text-color);
+      color: inherit;
       text-decoration: none;
 
       &:hover {
@@ -1152,7 +1166,9 @@ nav[data-toggle="toc"] {
     .card-text {
       overflow: hidden;
       text-overflow: ellipsis;
-      white-space: nowrap;
+      // white-space: nowrap;
+      max-height: 4rem;
+      mask-image: linear-gradient(180deg, #000 60%, transparent);
     }
 
 

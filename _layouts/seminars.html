@@ -10,7 +10,9 @@ layout: default
   </header>
 
   <article>
-    {{ content }}
+    <div class="clearfix">
+      {{ content | markdownify }}
+    </div>
     <!-- <hr> -->
     <!-- {% include seminar/featured.html %} -->
 

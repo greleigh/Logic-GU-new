@@ -1,0 +1,14 @@
+<!-- Generate display name from category names -->
+ <!-- 
+    input:
+        category = category alias
+    output: 
+        category_name
+    -->
+{% assign x_cat = include.category %}
+{% assign x_names = site.data.aliases.category_names %}
+
+{% assign category_name = x_cat %}
+{% if x_names[x_cat] %}
+    {% assign category_name = x_names[x_cat] %}
+{% endif %}

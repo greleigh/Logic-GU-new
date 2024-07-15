@@ -4,13 +4,16 @@ permalink: /seminars/
 title: Seminars
 description: >
   Seminars, etc.
+contact: graham # person in _profiles/
+
 nav: true
 nav_order: 2
+
 pagination:
   enabled: true
   collection: posts
   permalink: /page/:num/
-  per_page: 5
+  per_page: 10
   sort_field: date
   sort_reverse: true
   trail:
@@ -18,11 +21,12 @@ pagination:
     after: 3  # The number of links after the current page
 ---
 
-Plans for this page:
+{% include snippets/get_person_from_id.liquid 
+  id = page.contact
+%}
 
-- featured seminars (such as displayed below)
-- shortcut to categories (as below)
-- list of seminars paginated by year/semester
+The Logic Group runs a bi-weekly _Research Seminar in Logic_, monthly _Nordic Online Logic Seminar_ and the annual _Lindström Lecture series_, as well as other events.
 
-Each item above should be 'included'.
-
+The research seminar in Logic meets on alternate Fridays at 10.15.
+Unless otherwise stated, seminars are held at the department building (Humanisten). 
+Details of online talks are distributed in the [GU Logic mailing list]({{ site.data.links['gu-mailing-list'].url }}). Alternatively, contact [{{ person.name }}]({{ person.homepage }}) directly.
