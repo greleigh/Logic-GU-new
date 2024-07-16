@@ -6,6 +6,17 @@
         {
             "label": "Serve",
             "type": "shell",
+            "command": "./bin/entry_point.sh",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "isBackground": true,
+            "problemMatcher": []
+        },
+        {
+            "label": "Serve (old version)",
+            "type": "shell",
             "command": "bundle exec jekyll serve --livereload",
             "group": {
                 "kind": "build",

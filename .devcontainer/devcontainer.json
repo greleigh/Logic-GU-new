@@ -12,14 +12,29 @@
 			"NODE_VERSION": "lts/*"
 		}	
 	},
+	
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	"features": {
+		"ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
+		  "packages": "build-essential,imagemagick,inotify-tools,jupyter-nbconvert,procps,ruby-full,zlib1g-dev"
+		},
+		"ghcr.io/devcontainers-contrib/features/prettier:1": {}
+	  },
 
-	// Set *default* container specific settings.json values on container create.
-	"settings": {},
+	"customizations": {
+		"vscode": {
+			// Set *default* container specific settings.json values on container create.
+			"settings": {
+				// 
+			},
 
-	// Add the IDs of extensions you want installed when the container is created.
-	"extensions": [
-		"Shopify.theme-check-vscode"
-	],
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"Shopify.theme-check-vscode"
+			]
+		}
+	},
+
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [
