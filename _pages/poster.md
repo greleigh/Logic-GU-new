@@ -1,14 +1,15 @@
 ---
 layout: page
-title: Master in Logic at Gothenburg
+title: You should study Logic
 permalink: /poster/
-description: Should you study Logic?
+description: … or should you?
 
 nav: false
 
 image: poster.png
 image_align: right
-image_link: /assets/pdf/poster.pdf
+image_url: /assets/pdf/poster.pdf
+image_more_info: Click the image to see the poster!
 ---
 {% assign mil = site.data.links['MiL'].url %}
 
