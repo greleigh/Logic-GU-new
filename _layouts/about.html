@@ -49,9 +49,8 @@ layout: default
     <!-- Latest posts -->
     {% if page.upcoming -%}
       <h2><a href="{{ '/seminars/' | relative_url }}" style="color: inherit;">Upcoming seminars and events</a></h2>
-      {% assign build-date = site.time %}
-      {% assign events = site.posts | where_exp:"item", "build-date < item.date" | reverse %}
-      {%- include seminar/display_events.html
+      {% assign events = site.posts | where_exp:"item", "site.time < item.date" | reverse %}
+      {%- include seminar/display_events_cards.html
         postlist = events
         %}
     {%- endif %}
