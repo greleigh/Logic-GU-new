@@ -255,6 +255,7 @@ exclude:
   - docker-compose.yml
   - .devcontainer
   - .vscode
+  - .ruby-lsp
 keep_files:
   - CNAME
   - .nojekyll
