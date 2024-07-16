@@ -1,14 +1,13 @@
 {% assign featured_posts = include.postlist %}
 {% if featured_posts.size > 0 %}
-<br>
 <div class="container featured-posts">
   {% assign is_even = featured_posts.size | modulo: 2 %}
   <div class="row row-cols-2">
   {% for post in featured_posts %}
     <div class="card-item col">
       <div class="card hoverable">
-        <div class="row g-0">
-          <div class="col-md-12">
+        <!-- <div class="row g-0">
+          <div class="col-md-12"> -->
             <div class="card-body">
               <!-- <div class="float-right">
                 <i class="fa-solid fa-thumbtack fa-xs"></i>
@@ -34,7 +33,7 @@
                     <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
                 </p> -->
                 <div class="post-footer">
-                  <p class="post-meta">
+                  <div class="post-meta">
                     <time datetime="{{ post.date }}"><i class="fa-solid fa-calendar fa-sm"></i> {{ post.date | date: '%a, %-d %B %Y, %H:%M' }}</time> <!-- </a> -->
                     <!-- {% if tags != "" %}
                     &nbsp; &middot; &nbsp;
@@ -53,11 +52,11 @@
                         <i class="fa-solid fa-tag fa-sm"></i> {{ category_name }}</a>
                         {%- endfor -%}
                     {%- endif -%}
-                </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
+            <!-- </div>
+          </div> -->
         </div>
       <!-- </a> -->
     </div>
