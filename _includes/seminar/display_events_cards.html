@@ -6,40 +6,30 @@
   {% for post in featured_posts %}
     <div class="card-item col">
       <div class="card hoverable">
-        <!-- <div class="row g-0">
-          <div class="col-md-12"> -->
-            <div class="card-body">
-              <!-- <div class="float-right">
-                <i class="fa-solid fa-thumbtack fa-xs"></i>
-              </div> -->
-              <a href="{{ post.url | relative_url }}">
-                <div class="card-title">
-                  <h3>{{ post.title }}</h3>
-                  <h4>{{ post.speaker }}</h4>
-                </div>
-                <div class="card-text">{%- if post.description -%}{{ post.description }}{%- else -%}{{ post.excerpt }}{%- endif -%}</div>
-                </a>
+        <div class="card-body">
+          <a href="{{ post.url | relative_url }}">
+            <div class="card-title">
+              <h3>{{ post.title }}</h3>
+              <h4>{{ post.speaker }}</h4>
+            </div>
+            <div class="card-text">{%- if post.description -%}{{ post.description }}{%- else -%}{{ post.excerpt }}{%- endif -%}</div>
+            </a>
 
-                <div class="post-footer">
-                  <div class="post-meta">
-                    <time datetime="{{ post.date }}"><i class="fa-solid fa-calendar fa-sm"></i> {{ post.date | date: '%a, %-d %B %Y, %H:%M' }}</time>
-                    {% if categories != "" %}
-                    &nbsp; &middot; &nbsp;
-                      {% for category in post.categories %}
-                      {% include snippets/get_cat_name.liquid 
-                        category=category
-                        %}
-                      <a href="{{ category | slugify | prepend: '/blog/category/' | prepend: site.baseurl}}">
-                        <i class="fa-solid fa-tag fa-sm"></i> {{ category_name }}</a>
-                        {%- endfor -%}
-                    {%- endif -%}
-                  </div>
-                </div>
+            <div class="post-footer">
+              <div class="post-meta">
+                <time datetime="{{ post.date }}"><i class="fa-solid fa-calendar fa-sm"></i> {{ post.date | date: '%a, %-d %b %Y, %H:%M' }}</time>
+                {% if categories != "" %}
+                &nbsp; &middot; &nbsp;
+                  {% for category in post.categories %}
+                    {% include snippets/show_category.liquid 
+                      category=category
+                      %}
+                  {%- endfor -%}
+                {%- endif -%}
               </div>
-            <!-- </div>
-          </div> -->
+            </div>
+          </div>
         </div>
-      <!-- </a> -->
     </div>
   {% endfor %}
   </div>

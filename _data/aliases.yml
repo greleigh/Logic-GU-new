@@ -8,9 +8,3 @@ profiles:
   visiter: "Visiting Researcher"
   affiliate: "Affiliate member"
 
-category_names:
-  nol: "Nordic Online Logic Seminar"
-  lindstrom-lectures: "Lindström Lectures"
-  seminar: "Research Seminar"
-  event: "Event"
-  events: "Events"

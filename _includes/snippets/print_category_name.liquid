@@ -6,5 +6,5 @@
         category_name
     -->
 {%- assign x_cat = include.category -%}
-{%- assign x_names = site.data.aliases.category_names -%}
-{%- if x_names[x_cat] -%}{{ x_names[x_cat] }}{%- else -%}{{  x_cat  }}{%- endif -%}
+{%- assign x_name = site.data.categories[x_cat] -%}
+{%- if x_name -%}{{ x_name }}{%- else -%}{{  x_cat  }}{%- endif -%}

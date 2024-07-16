@@ -1,0 +1,15 @@
+<!-- Generate display name from category names -->
+ <!-- 
+    input:
+        category = category alias
+    output: 
+        category_name
+    -->
+{%- assign x_cat = include.category -%}
+{%- assign cat_data = site.data.categories[x_cat] -%}
+<i class="fa-solid fa-tag fa-sm"> </i> 
+{% if cat_data.page -%}
+    <a href="{{  cat_data.page | relative_url }}">{{ cat_data.name }}</a>
+{%- else -%}
+<a href="{{ x_cat | slugify | prepend: '/' | relative_url }}">{{ cat_data.name }}</a>
+{%- endif -%}
