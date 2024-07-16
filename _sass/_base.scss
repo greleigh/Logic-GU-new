@@ -1162,9 +1162,12 @@ nav[data-toggle="toc"] {
 
 .featured-posts {
   text-align: left!important;
+  padding: 0 0.5rem;
 
   .row {
-    padding-left: 0.5rem;
+    padding: 0rem;
+    // padding-right: 0.5rem;
+    margin: 0;
   }
 
   a {
