@@ -1197,6 +1197,14 @@ nav[data-toggle="toc"] {
       // white-space: nowrap;
       max-height: 4rem;
       mask-image: linear-gradient(180deg, #000 60%, transparent);
+
+      p {
+        padding-bottom: 0.5rem;
+      }
+
+      :last-child {
+        padding-bottom: 0rem;
+      }
     }
 
 
