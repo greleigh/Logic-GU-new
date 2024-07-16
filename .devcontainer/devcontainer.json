@@ -16,24 +16,26 @@
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
 		"ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
-		  "packages": "build-essential,imagemagick,inotify-tools,jupyter-nbconvert,procps,ruby-full,zlib1g-dev"
+		  "packages": "build-essential,imagemagick,inotify-tools,procps,ruby-full,zlib1g-dev"
 		},
 		"ghcr.io/devcontainers-contrib/features/prettier:1": {}
 	  },
 
 	"customizations": {
 		"vscode": {
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"Shopify.theme-check-vscode",
+				"esbenp.prettier-vscode",
+				"redhat.vscode-yaml"
+			],
+
 			// Set *default* container specific settings.json values on container create.
 			"settings": {
 				"themeCheck.checkOnOpen": true,
 				"editor.defaultFormatter": "esbenp.prettier-vscode"
-			},
+			}
 
-			// Add the IDs of extensions you want installed when the container is created.
-			"extensions": [
-				"Shopify.theme-check-vscode",
-				"esbenp.prettier-vscode"
-			]
 		}
 	},
 
