@@ -192,6 +192,7 @@ defaults:
       type: "news"
     values:
       layout: post
+      related_posts: false
   - scope:
       path: ""
       type: "profiles"
@@ -204,10 +205,18 @@ defaults:
       layout: "post"
       excerpt_separator: <!--more-->
       title: Logic Seminar
+      related_posts: false
   - scope:
       path: "assets"
     values:
       sitemap: false
+  - scope: # Why doesn't this work properly?
+      path: "_pages/lindstrom-lectures/"
+      type: "pages"
+    values:
+      # layout: lindstrom-lectures
+      # permalink: /lindstrom-lectures/:title
+      lindstrom-lecture: true
 
 announcements:
   enabled: true
@@ -297,15 +306,15 @@ jekyll-minifier:
 # -----------------------------------------------------------------------------
 
 jekyll-archives:
-  enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
+  enabled: [year] # enables year, tag and category archives (remove if you need to disable one of them).
   layouts:
     year: archive-year
     tag: archive-tag
     category: archive-category
   permalinks:
-    year: '/event/:year/'
-    tag: '/event/tag/:name/'
-    category: '/event/:name/'
+    year: '/events/:year/'
+    tag: '/events/tag/:name/'
+    category: '/events/:name/'
 
 # display_tags: ['formatting', 'images', 'links', 'math', 'code'] # these tags will be displayed on the front page of your blog
 display_categories:  # these categories will be displayed on the front page of your blog
