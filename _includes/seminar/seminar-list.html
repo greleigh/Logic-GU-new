@@ -20,7 +20,7 @@
       {{ post.content }}
       {%- else -%}
       <details>
-        <summary><div>{{ post.excerpt }}</div></summary>
+        <summary><div>{{ post.excerpt | markdownify }}</div></summary>
         <div>{{ post.content | remove_first: post.excerpt }}</div>
       </details>
       {%- endif -%}

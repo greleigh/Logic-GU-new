@@ -17,7 +17,7 @@
                   <h3>{{ post.title }}</h3>
                   <h4>{{ post.speaker }}</h4>
                 </div>
-                <div class="card-text">{%- if post.description -%}{{ post.description }}{%- else -%}{{ post.excerpt | truncatewords: "50" }}{%- endif -%}</div>
+                <div class="card-text">{%- if post.description -%}{{ post.description }}{%- else -%}{{ post.excerpt }}{%- endif -%}</div>
                 </a>
 
                 {% if post.external_source == blank %}
