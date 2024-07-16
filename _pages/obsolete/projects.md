@@ -1,7 +1,7 @@
 ---
 layout: page
 title: projects
-permalink: /projects/
+permalink: /_unused/projects/
 description: A growing collection of your cool projects.
 
 output: false
