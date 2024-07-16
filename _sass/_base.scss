@@ -188,7 +188,9 @@ blockquote {
   .more-info {
     margin-bottom: 5px;
     margin-top: 5px;
-    // font-family: monospace;
+    font-size: small;
+    font-style: italic;
+    color: var(--global-text-color-light);
 
     p {
       display: inline-block;
@@ -231,7 +233,9 @@ blockquote {
   .more-info {
     margin-bottom: 5px;
     margin-top: 5px;
-    font-family: monospace;
+    font-size: small;
+    font-style: italic;
+    color: var(--global-text-color-light);
 
     p {
       display: inline-block;
@@ -282,20 +286,6 @@ blockquote {
       p {
         display: block;
       }
-    }
-  }
-}
-
-.post-description {
-  margin-bottom: 2rem;
-  font-size: 0.875rem;
-
-  a {
-    color: inherit;
-
-    &:hover {
-      color: var(--global-theme-color);
-      text-decoration: none;
     }
   }
 }
@@ -987,6 +977,29 @@ html.transition *:after {
 
 // Extra Markdown style (post Customization)
 .post {
+
+  .post-header {
+    margin-bottom: 1rem;
+
+    h1, h2, h3, h4 {
+      margin-bottom: 0;
+    }
+
+    .post-description {
+      // margin-bottom: 2rem;
+      font-size: 0.875rem;
+      font-style: italic;
+
+      a {
+        color: inherit;
+
+        &:hover {
+          color: var(--global-theme-color);
+          text-decoration: none;
+        }
+      }
+    }
+  }
   .post-meta {
     color: var(--global-text-color-light);
     font-size: 0.875rem;
