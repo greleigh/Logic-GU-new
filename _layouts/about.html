@@ -50,7 +50,7 @@ layout: default
     {% if page.upcoming -%}
       <h2><a href="{{ '/seminars/' | relative_url }}" style="color: inherit;">Upcoming seminars and events</a></h2>
       {% assign build-date = site.time %}
-      {% assign events = site.posts | where_exp:"item", "build-date < item.date or item.featured" | reverse %}
+      {% assign events = site.posts | where_exp:"item", "build-date < item.date" | reverse %}
       {%- include seminar/display_events.html
         postlist = events
         %}
