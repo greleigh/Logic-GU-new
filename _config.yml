@@ -203,6 +203,7 @@ defaults:
     values:
       layout: "post"
       excerpt_separator: <!--more-->
+      title: Logic Seminar
   - scope:
       path: "assets"
     values:
@@ -252,6 +253,8 @@ exclude:
   - LICENSE
   - Dockerfile
   - docker-compose.yml
+  - .devcontainer
+  - .vscode
 keep_files:
   - CNAME
   - .nojekyll
