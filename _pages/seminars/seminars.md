@@ -9,6 +9,12 @@ contact: graham # person in _profiles/
 nav: true
 nav_order: 2
 
+show_categories:
+  - seminars
+  - nol
+  - lindstrom-lectures
+  - events
+
 pagination:
   enabled: true
   collection: posts
