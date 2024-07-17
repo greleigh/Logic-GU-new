@@ -4,7 +4,7 @@ nol:
 lindstrom-lectures:
   name: "Lindström Lectures"
   # page: /lindstrom-lectures/
-seminar:
+seminars:
   name: "Research Seminar"
   # page: /seminars/
 event: 

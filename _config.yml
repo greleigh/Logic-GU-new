@@ -191,7 +191,7 @@ defaults:
       path: ""
       type: "news"
     values:
-      layout: post
+      layout: news
       related_posts: false
   - scope:
       path: ""
@@ -312,16 +312,16 @@ jekyll-archives:
     tag: archive-tag
     category: archive-category
   permalinks:
-    year: '/events/:year/'
+    year: '/:year/'
     tag: '/events/tag/:name/'
     category: '/events/:name/'
 
 # display_tags: ['formatting', 'images', 'links', 'math', 'code'] # these tags will be displayed on the front page of your blog
 display_categories:  # these categories will be displayed on the front page of your blog
-  - seminar
+  - seminars
   - nol
   - lindstrom-lectures
-  - event
+  - events
 # display_categories: ['Research Seminar', 'NOL Seminar', 'Lindström Lecture', 'Event'] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
