@@ -652,12 +652,12 @@ footer.sticky-bottom {
 
 
     .post-footer {
-      color: var(--global-text-color-light);
       margin-top: 1rem;
       margin-bottom: 0;
     }
 
     .post-meta {
+      color: var(--global-text-color-light);
       font-size: 0.875rem;
       margin-bottom: 0;
     }
@@ -1004,13 +1004,6 @@ html.transition *:after {
     color: var(--global-text-color-light);
     font-size: 0.875rem;
     margin-bottom: 0;
-  }
-
-  .post-tags {
-    color: var(--global-text-color-light);
-    font-size: 0.875rem;
-    padding-top: 0.25rem;
-    padding-bottom: 1rem;
 
     a {
       color: var(--global-text-color-light);
@@ -1020,6 +1013,13 @@ html.transition *:after {
         color: var(--global-theme-color);
       }
     }
+  }
+
+  .post-tags {
+    color: var(--global-text-color-light);
+    font-size: 0.875rem;
+    padding-top: 0.25rem;
+    padding-bottom: 1rem;
   }
 }
 

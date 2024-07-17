@@ -23,7 +23,8 @@
                   {% for category in post.categories %}
                     &nbsp;
                     {% include snippets/show_category.liquid 
-                      category=category
+                      category = category
+                      active = true
                       %}
                   {% endfor %}
                 {%- endif -%}

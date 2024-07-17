@@ -1,12 +1,12 @@
 nol:
   name: "Nordic Online Logic Seminar"
-  # page: /nol/
+  page: /nol/
 lindstrom-lectures:
   name: "Lindström Lectures"
-  # page: /lindstrom-lectures/
+  page: /lindstrom-lectures/
 seminars:
   name: "Research Seminar"
-  # page: /seminars/
+  page: /seminars/
 event: 
   name: "Event"
   page: '/events/'

@@ -23,7 +23,9 @@
         {% for category in display_categories %}
           <li>
             {% include snippets/show_category.liquid 
-                category=category %}
+              category=category 
+              active = true
+            %}
           </li>
           {% unless forloop.last %}
             <p>&bull;</p>
