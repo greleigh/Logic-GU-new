@@ -1,0 +1,7 @@
+{% comment %}
+    Print a pretty date (somehow)
+    input:
+        date   = datetime (to display)
+        format = xxx
+{% endcomment %}
+<time datetime="{{ include.date }}"><i class="fa-solid fa-calendar fa-sm"></i> {{ include.date | date: {{  include.format }} }}</time>

@@ -1,7 +1,15 @@
-{% if site.display_tags or site.display_categories %}
+{% assign display_categories = page.display_categories %}
+{% unless display_categories %}
+  {% assign display_categories = site.display_categories %}
+{% endunless %}
+{% assign display_tags = page.display_tags %}
+{% unless display_tags %}
+  {% assign display_tags = site.display_tags %}
+{% endunless %}
+{% if display_tags or display_categories %}
     <div class="tag-category-list">
       <ul class="p-0 m-0">
-        {% for tag in site.display_tags %}
+        {% for tag in display_tags %}
           <li>
             <i class="fa-solid fa-hashtag fa-sm"></i> <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">{{ tag }}</a>
           </li>
@@ -9,10 +17,10 @@
             <p>&bull;</p>
           {% endunless %}
         {% endfor %}
-        {% if site.display_categories.size > 0 and site.display_tags.size > 0 %}
+        {% if display_categories.size > 0 and display_tags.size > 0 %}
           <p>&bull;</p>
         {% endif %}
-        {% for category in site.display_categories %}
+        {% for category in display_categories %}
           <li>
             {% include snippets/show_category.liquid 
                 category=category %}

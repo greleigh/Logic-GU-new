@@ -19,12 +19,13 @@
               <div class="post-meta">
                 <time datetime="{{ post.date }}"><i class="fa-solid fa-calendar fa-sm"></i> {{ post.date | date: '%a, %-d %b %Y, %H:%M' }}</time>
                 {% if categories != "" %}
-                &nbsp; &middot; &nbsp;
+                  &nbsp; &middot; 
                   {% for category in post.categories %}
+                    &nbsp;
                     {% include snippets/show_category.liquid 
                       category=category
                       %}
-                  {%- endfor -%}
+                  {% endfor %}
                 {%- endif -%}
               </div>
             </div>
