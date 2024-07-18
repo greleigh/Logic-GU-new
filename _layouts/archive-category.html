@@ -9,10 +9,7 @@ layout: default
      {% include snippets/get_cat_name.liquid 
         category=page.title
       %}
-    {% unless category_name %}
-      {% assign title = page.title %}
-    {% endunless %}
-    <h1 class="post-title"> <i class="fa-solid fa-tag fa-sm"></i> {% if category_name -%}{{ category_name }}{% else %}{{ title }}{% endif %} </h1>
+    <h1 class="post-title"> <i class="fa-solid fa-tag fa-sm"></i> {{ category_name | default: page.title }} </h1>
     <p class="post-description"> an archive of posts in this category </p>
   </header>
 
