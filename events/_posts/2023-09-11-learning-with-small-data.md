@@ -1,7 +1,7 @@
 ---
-speaker: CLASP Conference on Learning with Small Data (LSD)
+speaker: 
 affil: 
-title:
+title: CLASP Conference on Learning with Small Data (LSD)
 date: 2023-09-11 09:00:00 +02:00
 ---
 

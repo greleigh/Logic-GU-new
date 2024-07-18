@@ -1,7 +1,7 @@
 ---
-speaker: CLASP Conference on (Dis)embodiment
+speaker: 
 affil: 
-title:
+title: CLASP Conference on (Dis)embodiment
 date: 2022-09-15 09:00:00 +02:00
 ---
 

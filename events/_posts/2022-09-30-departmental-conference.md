@@ -1,6 +1,6 @@
 ---
-speaker: Departmental Conference (no logic seminar)
+speaker: 
 affil: 
-title: 
+title: Departmental Conference (no logic seminar)
 date: 2022-09-30 10:15:00 +02:00
 ---
