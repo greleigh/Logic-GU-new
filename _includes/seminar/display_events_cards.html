@@ -17,7 +17,10 @@
 
             <div class="post-footer">
               <div class="post-meta">
-                <time datetime="{{ post.date }}"><i class="fa-solid fa-calendar fa-sm"></i> {{ post.date | date: '%a, %-d %b %Y, %H:%M' }}</time>
+                {% include snippets/show_date.liquid 
+                  date = post.date
+                  short = true
+                  %}
                 {% if categories != "" %}
                   &nbsp; &middot; 
                   {% for category in post.categories %}

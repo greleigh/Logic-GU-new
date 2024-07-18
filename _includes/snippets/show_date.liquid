@@ -1,7 +1,20 @@
 {% comment %}
     Print a pretty date (somehow)
     input:
-        date   = datetime (to display)
-        format = xxx
+        date:     date,  the datetime to be displayed
+        date-end: date,  end-date of event (displayed if later than date)
+        short:    bool,  use short (default) or long format
+    output:
+        (cal-icon) date [to date-end]. Hours omitted if end-date
 {% endcomment %}
-<time datetime="{{ include.date }}"><i class="fa-solid fa-calendar fa-sm"></i> {{ include.date | date: {{  include.format }} }}</time>
+{%- if include.short -%}
+    {%- assign format = '%a, %-d %b %Y' -%}
+{%- else -%}
+    {%- assign format = '%A, %-d %B %Y' -%}
+{%- endif -%}
+{%- assign s_date = include.date | date: '%s' -%}
+{%- assign e_date = include.date-end | default: include.date | date: '%s' -%}
+{%- unless s_date < e_date -%}{%- assign format = format | append: ', %H:%M'-%}{%- endunless -%}
+<time datetime="{{ s_date }}"><i class="fa-solid fa-calendar fa-sm"></i> {{ s_date | date: format }}</time>
+{%- if s_date < e_date %} to <time datetime="{{ e_date }}">{{ e_date | date: format }}</time>
+{%- endif -%}
