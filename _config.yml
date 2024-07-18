@@ -207,10 +207,15 @@ defaults:
       excerpt_separator: <!--more-->
       image_align: left
   - scope:
-      path: "/seminars/"
+      path: "seminars/"
       type: "posts"
     values:
       title: Logic Seminar
+  - scope:
+      path: "events/"
+      type: "posts"
+    values:
+      excerpt-only: true
   - scope:
       path: "assets"
     values:

@@ -1,10 +1,13 @@
 ---
-layout: page
+# layout: page
 title: Meeting in honour of Dag Westerståhl on the occasion of his retirement
 permalink: events/westerstahl-workshop/
+excerpt-only: true
 ---
 
 We have the great pleasure to celebrate Dag Westerståhl on the occasion of his retirement from the University of Gothenburg with a one day scientific meeting on the philosophy, logic and linguistics related to Westerståhl's work.
+
+<!--more-->
 
 The event took place on Friday 3rd May 2013 at the Department of Philosophy, Linguistics and Theory of Science at the University of Gothenburg.
 

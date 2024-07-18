@@ -28,15 +28,18 @@
       {%- if debug_mode -%}<p>excerpt: {{ post.excerpt | inspect }}</p><p>content: {{ post.content | markdownify | inspect }}</p>{%- endif -%}
       {%- assign excerptParts = post.content | split: "<!--more-->" -%}
       {%- if debug_mode -%}<p>Part 1: {{ excerptParts[0] | inspect }}</p><p>Part 2: {{ excerptParts[1] | inspect }}</p>{%- endif -%}
-      {%- if excerptParts[1] != nil -%}
-        {%- if debug_mode -%}more content than excerpt{%- endif -%}
-        <details>
-          <summary><div>{{ excerptParts[0] | markdownify }}</div></summary>
-          {{ excerptParts[1] | markdownify}}
-        </details>
-      {%- else -%}
+      {%- if post.excerpt-only -%}
+        {%- if debug_mode -%}<p>Exceprt only:</p>{%- endif -%}
+        {{ post.excerpt }}
+      {%- elsif excerptParts[1] == nil -%}
         {%- if debug_mode -%}<p>Only content:</p>{%- endif -%}
         {{ post.content | markdownify }}
+      {%- else -%}
+        {%- if debug_mode -%}more content than excerpt{%- endif -%}
+        <details>
+          <summary><div>{{ excerptParts[0] }}</div></summary>
+          {{ excerptParts[1] }}
+        </details>
       {%- endif -%}
     </div>
     <div class="post-footer">

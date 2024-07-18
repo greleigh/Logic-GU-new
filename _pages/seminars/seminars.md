@@ -15,6 +15,8 @@ show_categories:
   - lindstrom-lectures
   - events
 
+# debug: true
+
 pagination:
   enabled: true
   collection: posts
