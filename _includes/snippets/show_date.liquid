@@ -4,18 +4,31 @@
         date:    (date)   the datetime to be displayed
         end-date (date)   end-date of event
         format   (string) format for date:
+        plain    (bool)   don't show (any) icons
     output:
         (cal-icon) date [to date-end]. Hours omitted if end-date
 {% endcomment %}
 {%- assign hm = include.date | date: '%H%M' -%}
-{%- if hm != '0000' -%}{%- assign show_time = true -%}{%- endif -%}
+{%- if hm == '0000' -%}
+    {%- assign show_time = false -%}
+{%- else -%}
+    {%- assign show_time = true -%}
+{%- endif -%}
 {%- case include.format -%}
     {%- when "short" -%}
         {%- assign format = '%a, %-d %b %Y' -%}
-    {%- else -%}
+    {%- when "long", nil -%}
         {%- assign format = '%A, %-d %B %Y' -%}
+    {%- else -%}
+        {%- assign format = include.format -%}
 {%- endcase -%}
 {%- if show_time -%}{%- assign format = format | append: ', %H:%M' -%}{%- endif -%}
-<time datetime="{{ include.date }}"><i class="fa-solid fa-calendar fa-sm"></i> {{ include.date | date: format }}</time>
-{%- if include.end-date %} to <time datetime="{{ include.end-date }}">{{ include.end-date | date: format }}</time>
+<time datetime="{{ include.date }}">
+    {%- unless include.plain -%}<i class="fa-solid fa-calendar fa-sm"></i> {% endunless -%}
+    {{ include.date | date: format }}</time>
+{%- if include.end-date %} 
+    {%- unless include.plain %}
+        <i class="fa-solid fa-long-arrow-right fa-sm"></i> <i class="fa-solid fa-calendar fa-sm"> </i>
+    {% endunless %}
+    <time datetime="{{ include.end-date }}">{{ include.end-date | date: format }}</time>
 {%- endif -%}
