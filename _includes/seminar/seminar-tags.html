@@ -1,11 +1,5 @@
-{% assign display_categories = page.display_categories %}
-{% unless display_categories %}
-  {% assign display_categories = site.display_categories %}
-{% endunless %}
-{% assign display_tags = page.display_tags %}
-{% unless display_tags %}
-  {% assign display_tags = site.display_tags %}
-{% endunless %}
+{% assign display_categories = include.categories | default: site.display_categories %}
+{% assign display_tags = include.tags | default: site.display_tags %}
 {% if display_tags or display_categories %}
     <div class="tag-category-list">
       <ul class="p-0 m-0">

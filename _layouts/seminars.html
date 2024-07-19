@@ -14,7 +14,9 @@ layout: default
       {{ content | markdownify }}
     </div>
 
-    {% include seminar/seminar-tags.html %}
+    {% include seminar/seminar-tags.html 
+      categories = site.display_categories
+      %}
 
     {% include seminar/seminar-list.html %}
   </article>
