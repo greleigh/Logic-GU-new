@@ -230,6 +230,10 @@ defaults:
       # layout: lindstrom-lectures
       # permalink: /lindstrom-lectures/:title
       lindstrom-lecture: true
+  - scope: # Why doesn't this work properly?
+      path: "unused/"
+    values:
+      published: false
 
 announcements:
   enabled: true
