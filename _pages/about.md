@@ -6,7 +6,7 @@ subtitle: The Logic Group at the <a href='https://www.gu.se'>University of Gothe
 
 image: logic-front.jpg
 image_alt: Logic is super cool
-image_more_info: 
+image_caption: Logic is super cool 
 
 
 news: true  # includes a list of news items

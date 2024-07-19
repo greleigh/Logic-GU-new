@@ -10,6 +10,7 @@ layout: default
     {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
     {%- assign alt_text = page.image_alt -%}
     {%- assign more_info = page.image_more_info -%}
+    {%- assign caption = page.image_caption -%}
     <div class="page-image float-right">
       
       {% include figure.html
@@ -18,6 +19,7 @@ layout: default
         sizes = sizes
         alt = alt_text
         cache_bust = true 
+        caption = caption
       %}
       {%- if more_info %}
       <div class="more-info">

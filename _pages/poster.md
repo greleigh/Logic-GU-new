@@ -9,7 +9,7 @@ nav: false
 image: poster.png
 image_align: right
 image_url: /assets/pdf/poster.pdf
-image_more_info: Click the image to see the poster!
+image_caption: Click the image to see the poster!
 ---
 {% assign mil = site.data.links['MiL'].url %}
 

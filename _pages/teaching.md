@@ -8,7 +8,7 @@ nav_order: 5
 
 image: poster.png
 image_alt: You should study Logic iff this sentence is true.
-image_more_info: Should you study logic?
+image_caption: Should you study logic?
 image_url: _pages/poster.md
 ---
 

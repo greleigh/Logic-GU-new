@@ -5,7 +5,7 @@ description: >
     First professor of Logic and the University of Gothenburg
 
 image: Pelle2001.jpg
-image_more_info: Per Lindstöm in 2001
+image_caption: Per Lindstöm in 2001
 
 lindstrom-lecture: false
 
