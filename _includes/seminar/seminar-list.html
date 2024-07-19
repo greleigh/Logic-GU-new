@@ -25,20 +25,18 @@
     </a>
 
     <div class="post-body">
-      {%- if debug_mode -%}<p>excerpt: {{ post.excerpt | inspect }}</p><p>content: {{ post.content | markdownify | inspect }}</p>{%- endif -%}
-      {%- assign excerptParts = post.content | split: "<!--more-->" -%}
-      {%- if debug_mode -%}<p>Part 1: {{ excerptParts[0] | inspect }}</p><p>Part 2: {{ excerptParts[1] | inspect }}</p>{%- endif -%}
+      {%- assign excerptParts = post.content | split: post.excerpt_separator -%}
       {%- if post.excerpt-only -%}
-        {%- if debug_mode -%}<p>Exceprt only:</p>{%- endif -%}
+        {%- if debug_mode -%}<p>Excerpt only requested:</p>{%- endif -%}
         {{ post.excerpt }}
       {%- elsif excerptParts[1] == nil -%}
-        {%- if debug_mode -%}<p>Only content:</p>{%- endif -%}
+        {%- if debug_mode -%}<p>No excerpt:</p>{%- endif -%}
         {{ post.content | markdownify }}
       {%- else -%}
-        {%- if debug_mode -%}more content than excerpt{%- endif -%}
+        {%- if debug_mode -%}<p>more content than excerpt</p>{%- endif -%}
         <details>
-          <summary><div>{{ excerptParts[0] }}</div></summary>
-          {{ excerptParts[1] }}
+          <summary><div>{{ post.excerpt }}</div></summary>
+          {{ excerptParts[1] | markdownify }}
         </details>
       {%- endif -%}
     </div>
@@ -56,8 +54,9 @@
               {% endfor %}
           {% endif %} -->
           {% if categories != "" %}
-          &nbsp; &middot; &nbsp;
+            &nbsp; &middot; 
             {% for category in post.categories %}
+            &nbsp;
               {% include snippets/show_category.liquid 
                 category = category
                 active = true

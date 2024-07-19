@@ -204,7 +204,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      excerpt_separator: <!--more-->
+      excerpt_separator: "<!--more-->"
       image_align: left
   - scope:
       path: "seminars/"
