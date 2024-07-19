@@ -3,7 +3,6 @@ layout: page
 title: Gothenburg&ndash;Warsaw Workshop on Truth
 date: 2018-12-06 09:30:00+0100
 permalink: events/Gothenburg-Warsaw-Truth-Workshop/
-published: false
 ---
 The Gothenburg–Warsaw workshop on truth was held on Thursday, 6 December 2018 at the [Department of Philosophy, Linguistics and Theory of Science](https://www.gu.se/flov) at the University of Gothenburg.
 See below for the schedule.
