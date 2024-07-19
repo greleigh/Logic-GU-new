@@ -1,7 +1,7 @@
 ---
-layout: page
+layout: news
 title: Announcements
 permalink: /announcements/
 ---
 
-{% include news.html %}
+
