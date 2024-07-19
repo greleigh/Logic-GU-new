@@ -20,7 +20,7 @@ show_categories:
 pagination:
   enabled: true
   collection: posts
-  permalink: /page/:num/
+  # permalink: /:num/
   per_page: 10
   sort_field: date
   sort_reverse: true

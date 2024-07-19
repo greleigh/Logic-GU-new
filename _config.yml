@@ -32,6 +32,8 @@ show_drafts: true
 image_dir: 'assets/img/'
 people_img_dir: 'assets/img/people/'
 
+permalink: pretty # permalinks have trailing /
+
 # -----------------------------------------------------------------------------
 # Theme
 # -----------------------------------------------------------------------------
@@ -142,6 +144,7 @@ future: true
 # Pagination
 pagination:
   enabled: true
+  permalink: :num/ # assumes paginations happen in different directories
 
 # related_blog_posts:
 #   enabled: true
