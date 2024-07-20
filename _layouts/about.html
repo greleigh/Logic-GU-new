@@ -45,6 +45,7 @@ layout: default
     <!-- News -->
     {% if page.news and site.announcements.enabled -%}
       <h2><a href="{{ '/announcements/' | relative_url }}" style="color: inherit;">Announcements</a></h2>
+      {% if site.debug %}There are {{ site.news | size }} news items, displaying first {{ site.announcements.limit }}{% endif %}
       {%- include news.html limit=true %}
     {%- endif %}
 
@@ -52,6 +53,7 @@ layout: default
     {% if page.upcoming -%}
       <h2><a href="{{ '/seminars/' | relative_url }}" style="color: inherit;">Upcoming seminars and events</a></h2>
       {% assign events = site.posts | where_exp:"item", "site.time < item.date" | sort:"date-start" | reverse %}
+      {% if site.debug %}Found {{ events | size }} upcoming events{% endif %}
       {%- include seminar/display_events_cards.html
         postlist = events
         %}

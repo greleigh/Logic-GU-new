@@ -144,7 +144,7 @@ future: true
 # Pagination
 pagination:
   enabled: true
-  permalink: :num/ # assumes paginations happen in different directories
+  permalink: page/:num/ # assumes paginations happen in different directories
 
 # related_blog_posts:
 #   enabled: true
@@ -230,7 +230,7 @@ defaults:
       # layout: lindstrom-lectures
       # permalink: /lindstrom-lectures/:title
       lindstrom-lecture: true
-  - scope: # Why doesn't this work properly?
+  - scope: # a place for old stuff
       path: "unused/"
     values:
       published: false
