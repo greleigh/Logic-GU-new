@@ -2,6 +2,9 @@
 layout: default
 ---
 
+{% assign now = site.time %}
+{% assign today = site.time | date:'%Y-%b-%a' %}
+
 <!-- about.html -->
 <div class="post">
   {% if page.image -%}
@@ -51,7 +54,7 @@ layout: default
     <!-- Latest posts -->
     {% if page.upcoming -%}
       <h2><a href="{{ '/seminars/' | relative_url }}" style="color: inherit;">Upcoming seminars and events</a></h2>
-      {% assign events = site.posts | where_exp:"item", "site.time < item.date" | reverse %}
+      {% assign events = site.posts | where_exp:"item", "site.time < item.date" | sort:"date-start" | reverse %}
       {%- include seminar/display_events_cards.html
         postlist = events
         %}
