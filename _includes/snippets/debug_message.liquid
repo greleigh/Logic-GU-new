@@ -1,5 +1,6 @@
 {%- if site.debug or page.debug -%}
     <blockquote class="block-warning">
         <code>{% if site.debug %}site.debug{% else %}page.debug{% endif %} = true</code>
+        Last compiled: {{ site.time | date_to_rfc822 }}
     </blockquote>
 {%- endif -%}
