@@ -32,7 +32,7 @@ layout: default
   
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
-    {%- if page.description -%}<div class="post-description">{{ page.description }}</div>{%- endif -%}
+    {%- if page.description or site.debug -%}<div class="post-description">{{ page.description }}{%- if site.debug %}(page path: {{ page.path }}){%- endif -%}</div>{%- endif -%}
   </header>
 
   <article>

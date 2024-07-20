@@ -27,13 +27,13 @@
     <div class="post-body">
       {%- assign excerptParts = post.content | split: post.excerpt_separator -%}
       {%- if post.excerpt-only -%}
-        {%- if debug_mode -%}<p>Excerpt only requested:</p>{%- endif -%}
+        {%- if debug_mode -%}<em>Excerpt only requested:</em>{%- endif -%}
         {{ post.excerpt }}
       {%- elsif excerptParts[1] == nil -%}
-        {%- if debug_mode -%}<p>No excerpt:</p>{%- endif -%}
+        {%- if debug_mode -%}<em>No excerpt:</em>{%- endif -%}
         {{ post.content | markdownify }}
       {%- else -%}
-        {%- if debug_mode -%}<p>more content than excerpt</p>{%- endif -%}
+        {%- if debug_mode -%}<em>More content than excerpt</em>{%- endif -%}
         <details>
           <summary><div>{{ post.excerpt }}</div></summary>
           {{ excerptParts[1] | markdownify }}

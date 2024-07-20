@@ -17,6 +17,7 @@
 
     <!-- Content -->
     <div class="container mt-5">
+      {%- include snippets/debug_message.liquid -%}
       {% if page.toc and page.toc.sidebar %}
         {% if page.toc.sidebar == "right" %}
         <div class="row">
