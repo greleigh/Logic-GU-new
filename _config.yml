@@ -195,7 +195,7 @@ defaults:
       path: ""
       type: "news"
     values:
-      layout: news
+      layout: post
       related_posts: false
   - scope:
       path: ""
@@ -237,7 +237,7 @@ defaults:
 
 announcements:
   enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+  scrollable: false # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 upcoming_events:

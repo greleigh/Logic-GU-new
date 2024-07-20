@@ -38,6 +38,8 @@ layout: default
   <article>
     {{ content }}
 
-    {% include news.html %}
+    {% if site.announcements.enabled -%}
+      {%- include news.html limit=false %}
+    {%- endif %}
   </article>
 </div>
