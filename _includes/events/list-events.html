@@ -1,0 +1,78 @@
+{% comment %}
+  Show a list of events.
+  inputs:
+    events  array of events to post
+{% endcomment %}
+{%- if site.debug or page.debug -%}{%- assign debug_mode = true -%}{%- endif -%}
+
+{% assign eventlist = include.events | default: site.posts %}
+
+<ul class="post-list">
+
+  {%- if page.pagination.enabled -%}
+    {%- assign eventlist = paginator.posts -%}
+  {%- else -%}
+    {%- assign postlist = site.posts | where_exp:"item", "display_categories contains item.categories.first" -%}
+  {%- endif -%}
+
+  {% if debug_mode %}Found {{ eventlist | size }} events{% endif %}
+
+  {% for event in eventlist %}
+
+  <li>
+    {% capture speaker -%}{{ event.speaker }}{%- if event.speaker and event.affil %}, {{ event.affil }}{%- endif -%}{% endcapture %}
+
+    <a class="post-title" href="{{ event.url | relative_url }}">
+    <h3>{{ event.title }}</h3><h4>{{ speaker }}</h4>
+    </a>
+
+    <div class="post-body">
+      {%- assign excerptParts = event.content | split: event.excerpt_separator -%}
+      {%- if event.excerpt-only -%}
+        {%- if debug_mode -%}<em>Excerpt only requested:</em>{%- endif -%}
+        {{ event.excerpt }}
+      {%- elsif excerptParts[1] == nil -%}
+        {%- if debug_mode -%}<em>No excerpt:</em>{%- endif -%}
+        {{ event.content | markdownify }}
+      {%- else -%}
+        {%- if debug_mode -%}<em>More content than excerpt</em>{%- endif -%}
+        <details>
+          <summary><div>{{ event.excerpt }}</div></summary>
+          {{ excerptParts[1] | markdownify }}
+        </details>
+      {%- endif -%}
+    </div>
+    <div class="post-footer">
+      <div class="post-meta">
+          {% include snippets/show_date.liquid 
+            start-date = event.date-start
+            date = event.date
+            end-date = event.date-end
+            %}
+          <!-- {% if tags != "" %}
+          &nbsp; &middot; &nbsp;
+            {% for tag in event.tags %}
+            <a href="{{ tag | slugify | prepend: '/blog/tag/' | prepend: site.baseurl}}">
+              <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a> &nbsp;
+              {% endfor %}
+          {% endif %} -->
+          {% if categories != "" %}
+            &nbsp; &middot; 
+            {% for category in event.categories %}
+            &nbsp;
+              {% include snippets/show_category.liquid 
+                category = category
+                active = true
+                %}
+            {% endfor %}
+          {% endif %}
+        </div>
+    </div>
+  </li>
+
+  {% endfor %}
+</ul>
+
+{%- if page.pagination.enabled -%}
+  {%- include pagination.html -%}
+{%- endif -%}

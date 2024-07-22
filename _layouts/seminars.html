@@ -6,7 +6,7 @@ layout: default
 
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-description">{{ page.description }}{% if site.debug %}(page path: {{ page.path }}){%- endif -%}</p>
+    <p class="post-description">{{ page.description }}{% if site.debug %}(page path: {{ page.path }}; url: {{ page.url }}){%- endif -%}</p>
   </header>
 
   <article>
@@ -14,10 +14,12 @@ layout: default
       {{ content | markdownify }}
     </div>
 
-    {% include seminar/seminar-tags.html 
+    {% include events/display-tags.liquid 
       categories = site.display_categories
       %}
 
-    {% include seminar/seminar-list.html %}
+    {% include events/display-years.liquid %}
+
+    {% include events/list-events.html %}
   </article>
 </div>

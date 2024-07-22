@@ -1,0 +1,62 @@
+---
+layout: default
+---
+<!-- seminar.html -->
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-description">{{ page.description }}{% if site.debug %}(page path: {{ page.path }}){%- endif -%}</p>
+  </header>
+
+  <article>
+    <div class="clearfix">
+      {{ content | markdownify }}
+    </div>
+
+    {% include events/display-tags.liquid 
+      categories = site.display_categories
+      %}
+
+    {% include events/display-years.liquid %}
+
+    {% comment %}
+    {% capture recent_date %}{{ site.time | date:"%Y"}}-01-01{% endcapture %}{% comment %}start of this year{% endcomment %}
+    {% assign recent_date = recent_date %}
+    {% assign recent_date = site.time | date:"%s" %}
+    {% assign recent_events = site.posts | where_exp:"item", "recent_date < item.date | date:'%s'" %}
+    {% include events/list-events.html events=recent_events %}
+    {% endcomment %}
+      {% assign r_events = '' | split:'' %}
+      {% comment %} Use a recent date instead.
+        {% capture t_year %}{{ site.time | date:'%Y' }}-01-01 00:00:00+0000{% endcapture %} 
+        {% assign r_time = t_year | date:'%s' | minus: 15000000 %}
+      {% endcomment %}
+      {% assign r_time = site.time | date:'%s' | minus: 15000000 %}
+      {% for e in site.posts %}
+        {% assign e_time = e.date | date:'%s' | plus: 0 %}
+        {% if e_time >= r_time  %}
+          {% assign r_events = r_events | push: e %}
+        {% else %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+      {% include events/list-events.html events=r_events %}
+            {% assign events_by_year = site.posts | group_by_exp: "item", "item.date | date: '%Y' " %}
+      {% assign years = events_by_year | map:"name" %}
+      {% assign year = site.time | date:"%Y" %}
+      {% assign recent_events_by_year = years | where_exp:"y","y >= year"  %}
+      {% assign recent_events = events_by_year | where_exp:"y","recent_events_by_year contains y.name" %}
+      {% comment %} {{ recent_events[0].items | concat: recent_events[1].items | inspect }} {% endcomment %}
+      {% assign events = recent_events[0].items | concat: recent_events[1].items %}
+      {% comment %} {{ recent_events[1].items | inspect }} {% endcomment %}
+      {% comment %} {% assign events = nil %} {% endcomment %}
+      {% comment %} {% assign vegetables = "carrots, turnips, potatoes" | split: ", " %} {% endcomment %}
+      {% for y in recent_events_by_year %}
+        {% comment %} {% assign events = events | concat: recent_events[y].items %} {% endcomment %}
+      {% endfor %}
+      {% comment %} {{ events | size }} {% endcomment %}
+      {% comment %} {{ events | inspect }} {% endcomment %}
+      {% include events/list-events.html events=events %}
+  </article>
+</div>

@@ -24,9 +24,9 @@ pagination:
   per_page: 10
   sort_field: date
   sort_reverse: true
-  trail:
-    before: 1 # The number of links before the current page
-    after: 3  # The number of links after the current page
+  # trail:
+  #   before: 1 # The number of links before the current page
+  #   after: 3  # The number of links after the current page
 ---
 
 {% include snippets/get_person_from_id.liquid 

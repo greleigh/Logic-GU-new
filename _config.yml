@@ -23,7 +23,7 @@ baseurl: /Logic-GU-new # the subpath of your site, e.g. /blog/. Leave blank for 
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
-# debug: true # activate debugging
+debug: true # activate debugging
 show_drafts: true
 
 # -----------------------------------------------------------------------------
@@ -32,7 +32,7 @@ show_drafts: true
 image_dir: 'assets/img/'
 people_img_dir: 'assets/img/people/'
 
-permalink: pretty # permalinks have trailing /
+# permalink: pretty # permalinks have trailing /
 
 # -----------------------------------------------------------------------------
 # Theme
@@ -139,12 +139,12 @@ future: true
 
 # blog_name: al-folio # blog_name will be displayed in your blog page
 # blog_description: a simple whitespace theme for academics
-# permalink: /blog/:year/:title/
+permalink: pretty
 
 # Pagination
 pagination:
   enabled: true
-  permalink: page/:num/ # assumes paginations happen in different directories
+  permalink: /:num/ # assumes paginations happen in different directories
 
 # related_blog_posts:
 #   enabled: true
@@ -329,7 +329,7 @@ jekyll-archives:
     tag: archive-tag
     category: archive-category
   permalinks:
-    year: '/:year/'
+    year: '/events/:year/'
     tag: '/events/tag/:name/'
     category: '/events/:name/'
 
@@ -436,7 +436,7 @@ enable_bing_verification:   false  # enables bing site verification
 enable_masonry:             true   # enables automatic project cards arrangement
 enable_math:                true   # enables math typesetting (uses MathJax)
 enable_tooltips:            false  # enables automatic tooltip links generated for each section titles on pages and posts
-enable_darkmode:            true   # enables switching between light/dark modes
+enable_darkmode:            false   # enables switching between light/dark modes
 enable_navbar_social:       false  # enables displaying social links in the navbar on the about page
 enable_project_categories:  true   # enables categorization of projects into multiple categories
 enable_medium_zoom:         true   # enables image zoom feature (as on medium.com)
