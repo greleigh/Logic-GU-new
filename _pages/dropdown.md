@@ -6,10 +6,12 @@ nav: true
 nav_order: 8
 dropdown: true
 children:
+  - title: Research Seminars
+    permalink: /research-seminars/
   - title: Lindström Lectures
     permalink: /lindstrom-lectures/
   - title: divider
-  - title: Nordic Onlince Logic Semianr
+  - title: Nordic Online Logic Seminar
     permalink: /nol/
   - title: divider
   - title: Resources
