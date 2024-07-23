@@ -7,6 +7,8 @@ description: >
 image: Pelle2001.jpg
 image_caption: Per Lindstöm in 2001
 
+permalink: /lindstrom-lectures/per-lindstrom
+
 lindstrom-lecture: false
 
 ---
