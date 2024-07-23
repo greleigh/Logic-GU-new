@@ -184,11 +184,11 @@ collections:
   news:
     output: true
     permalink: /announcements/:path/
-  projects:
-    output: true
-    permalink: /projects/:path/
   profiles:
-    output: false
+    output: false  
+  static_sites:
+    output: true
+    permalink: /:path
 
 defaults:
   - scope:
