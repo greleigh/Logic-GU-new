@@ -20,6 +20,8 @@ layout: default
 
     {% include events/display-years.liquid %}
 
-    {% include events/list-events.html %}
+    {% include events/list-events.html 
+        limit=page.limit
+      %}
   </article>
 </div>

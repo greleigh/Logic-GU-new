@@ -18,7 +18,7 @@ show_categories:
 # debug: true
 
 pagination:
-  enabled: true
+  enabled: false
   collection: posts
   # permalink: /:num/
   per_page: 10

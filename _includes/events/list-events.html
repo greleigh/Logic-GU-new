@@ -5,19 +5,25 @@
 {% endcomment %}
 {%- if site.debug or page.debug -%}{%- assign debug_mode = true -%}{%- endif -%}
 
-{% assign eventlist = include.events | default: site.posts %}
+{%- if page.pagination.enabled -%}
+  {%- assign eventlist = paginator.posts -%}
+  {%- assign e_limit = eventlist | size -%}
+{%- else -%}
+  {%- if include.events -%}
+    {%- assign eventlist = include.events -%}
+  {%- else -%}
+    {%- assign eventlist = site.posts | where_exp:"item", "display_categories contains item.categories.first" -%}
+  {%- endif -%}
+  {%- assign e_size = eventlist | size -%}
+  {%- assign e_limit = include.limit | default: e_size -%}
+{%- endif -%}
 
 <ul class="post-list">
 
-  {%- if page.pagination.enabled -%}
-    {%- assign eventlist = paginator.posts -%}
-  {%- else -%}
-    {%- assign postlist = site.posts | where_exp:"item", "display_categories contains item.categories.first" -%}
-  {%- endif -%}
 
-  {% if debug_mode %}Found {{ eventlist | size }} events{% endif %}
+  {% if debug_mode %}Showing {{ e_limit }} of {{ e_size }} events{% endif %}
 
-  {% for event in eventlist %}
+  {% for event in eventlist limit: e_limit %}
 
   <li>
     {% capture speaker -%}{{ event.speaker }}{%- if event.speaker and event.affil %}, {{ event.affil }}{%- endif -%}{% endcapture %}
