@@ -33,7 +33,8 @@ pagination:
   id = page.contact
 %}
 
-The Logic Group runs a bi-weekly _Research Seminar in Logic_, monthly _Nordic Online Logic Seminar_ and the annual _Lindström Lecture series_, as well as other events.
+The Logic Group runs a bi-weekly Research Seminar in Logic, monthly Nordic Online Logic Seminar and the annual Lindström Lecture series, as well as other events.
+ See below for a list of recent and upcoming events or follow the links to jump straight to a category.
 
 The research seminar in Logic meets on alternate Fridays at 10.15.
 Unless otherwise stated, seminars are held at the department building (Humanisten). 
