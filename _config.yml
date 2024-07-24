@@ -189,6 +189,9 @@ collections:
   static_sites:
     output: true
     permalink: /:path
+  # pages:
+  #   output: true
+  #   permalink: /pages/:path
 
 defaults:
   - scope:
@@ -214,6 +217,7 @@ defaults:
       type: "posts"
     values:
       title: Logic Seminar
+      speaker: TBC
   - scope:
       path: "events/"
       type: "posts"
