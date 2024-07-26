@@ -187,6 +187,7 @@ blockquote {
   }
 }
 
+
 // Citation
 
 .citation,
@@ -1219,6 +1220,12 @@ nav[data-toggle="toc"] {
 .featured-posts {
   text-align: left!important;
   padding: 0 0.5rem;
+  
+  // Override card widths
+  .row-cols-2 > * {
+    flex: 1 0 350px;
+    max-width: unset;
+  }
 
   .row {
     padding: 0rem;
@@ -1266,6 +1273,7 @@ nav[data-toggle="toc"] {
     padding: 0.5rem 0;
     position: absolute;
     bottom: 0;
+    background: rgba(255, 255, 255, 0.9);
   }
   .post-meta {
     color: var(--global-text-color-light);
