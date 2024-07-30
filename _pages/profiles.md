@@ -18,4 +18,6 @@ profile-order:
 
 ---
 
-__TODO: Include publication listings, on separate page?__
+>
+> Include publication listings, on separate page?
+{: .block-tip }
