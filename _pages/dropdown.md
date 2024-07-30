@@ -8,6 +8,7 @@ dropdown: true
 children:
   - title: Research Seminars
     permalink: /research-seminars/
+  - title: divider
   - title: Lindström Lectures
     permalink: /lindstrom-lectures/
   - title: divider

@@ -7,9 +7,10 @@ nav: true
 nav_order: 6
 ---
 
-
-1. Use a collection for activities
-2. How should these be merged/overlap with the [list of events]({{ '/events/' | relative_url }}).
+>
+> 1. Use a collection for activities?
+> 2. How should these be merged/overlap with the [list of events]({{ '/events/' | relative_url }}).
+{: .block-tip }
 
 
 ## Seminars
