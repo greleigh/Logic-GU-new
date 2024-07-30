@@ -3,7 +3,6 @@ speaker: Albert Visser
 affil: Utrecht University
 title: Restricted Sequential Theories
 date: 2024-03-25 16:00:00 +01:00
-location: zoom
 --- 
 *Sequential theories* form a fundamental class of theories in logic. They
 have full coding possibilities and allow us to build partial satisfaction predicates

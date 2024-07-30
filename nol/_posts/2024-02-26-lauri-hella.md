@@ -3,7 +3,6 @@ speaker: Lauri Hella
 affil: Tampere University
 title: Game characterizations for the number of quantifiers
 date: 2024-03-04 16:00:00 +01:00
-location: zoom
 ---
 A game that characterizes definability of classes of structures by first-order sentences
 containing a given number of quantifiers was introduced by Immerman in 1981. In this

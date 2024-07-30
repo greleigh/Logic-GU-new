@@ -3,7 +3,6 @@ speaker: Ana María Mora-Márquez
 affil: University of Gothenburg
 title: Medieval Aristotelian Logic is Scientific Method
 date: 2024-05-27 16:00:00 +02:00
-location: zoom
 --- 
 This presentation aims to show that medieval Aristotelian logic can be generally characterized as scientific method.
 To be sure, this method includes formal logic as one of its parts, but formal logic is by no means the crucial part.

@@ -3,7 +3,6 @@ speaker: Sonja Smets
 affil: Institute for Logic, Language and Computation, University of Amsterdam
 title: Reasoning about Epistemic Superiority and Data Exchange 
 date: 2023-11-27 15:00:00 +01:00
-location: zoom
 ---
 In this presentation I focus on a framework that generalizes dynamic epistemic logic in order to model a wider range of scenarios including those in which agents read or communicate (or somehow gain access to) all the information stored at specific sources, or possessed by some other agents (including information of a non-propositional nature, such as data, passwords, secrets etc).
 The resulting framework allows one to reason about the state of affairs in which one agent (or group of agents) has ‘epistemic superiority’ over another agent (or group).

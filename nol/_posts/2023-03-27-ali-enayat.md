@@ -3,7 +3,6 @@ speaker: Ali Enayat
 affil: University of Gothenburg
 title: Arithmetic and set theory through the lens of interpretability
 date: 2023-03-27 16:00:00 +02:00
-location: zoom
 ---
 The notion of (relative) interpretation for first order theories was introduced in a landmark 1953 monograph by Alfred Tarski, Andrzej Mostowski and Raphael Robinson, where it was developed as a powerful tool for establishing undecidability results.
 By now the domain of interest and applicability of interpretability theory far exceeds undecidability theory owing to its multifaceted interactions with both proof theory and model theory.

@@ -3,7 +3,6 @@ speaker: Thomas Ågotnes
 affil: University of Bergen and Shanxi University
 title: Somebody Knows and Weak Conjunctive Closure in Modal Logic
 date: 2023-08-28 16:00:00 +02:00
-location: zoom
 ---
 Normal modal logics are closed under conjunctive closure.
 There are, however, interesting non-normal logics that are not, but which nevertheless satisfy a weak form of conjunctive closure. 

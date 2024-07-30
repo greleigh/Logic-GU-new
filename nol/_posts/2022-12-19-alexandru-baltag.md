@@ -3,7 +3,6 @@ speaker: Alexandru Baltag
 affil: University of Amsterdam
 title: From Surprise Exams to Topological Mu-Calculus
 date: 2022-12-19 16:00:00 +01:00
-location: zoom
 ---
 I present a topological epistemic logic, motivated by a famous epistemic puzzle: the Surprise Exam Paradox.
 It is a fixed-point modal logic, with modalities for knowledge (modelled as the universal modality), knowability of a proposition (represented by the topological interior operator), and (un)knowability of the actual world.

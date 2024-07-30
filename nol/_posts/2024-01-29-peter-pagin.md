@@ -3,7 +3,6 @@ speaker: Peter Pagin
 affil: Stockholm University
 title: Switcher Semantics and quantification
 date: 2024-01-29 16:00:00 +01:00
-location: zoom
 ---
 Switcher Semantics is a semantic framework that is basically characterised by allowing *switching*: when recursively applying a semantic function $$\mu$$ to a complex term $$t$$, the semantic function applying to an immediate subterm $$t'$$ of $$t$$ may be a function $$\mu'$$, distinct from $$\mu$$.
 An operator-argument-position pair is called a *switcher* if it induces such a switch.

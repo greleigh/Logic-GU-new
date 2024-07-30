@@ -3,7 +3,6 @@ speaker: Magdalena Ortiz
 affil: Umeå University
 title: A Short Introduction to SHACL for Logicians
 date: 2023-05-22 16:00:00 +02:00
-location: zoom
 ---
 The SHACL Shapes Constraint Language was recommended in 2017 by the W3C for describing constraints on web data (specifically, on RDF graphs) and validating them.
 At first glance, it may not seem to be a topic for logicians, but as it turns out, SHACL can be approached as a formal logic, and actually quite an interesting one.
