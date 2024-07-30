@@ -45,7 +45,7 @@ layout: default
 
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
-    <h2 class="post-title">{{ page.speaker }}</h2>
+    <h2 class="post-title">{{ page.speaker }}{%- if page.speaker and page.affil %}, {% endif -%}{{ page.affil }}</h2>
     <div class="post-meta">
       {% include snippets/show_date.liquid 
         start-date = page.date-start
