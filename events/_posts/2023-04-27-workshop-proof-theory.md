@@ -4,6 +4,8 @@ affil:
 title:  "Workshop on Fixed Points and Ill-founded Proofs"
 date: 2023-04-27 10:00:00 +02:00
 location:  Humanisten
+
+published: false
 ---
 The logic group is hosting a two-day workshop on Thursday, 27 April and Friday, 28 April.
 This workshop brings together researchers from different aspects of fixed point logics and ill-founded proofs.
