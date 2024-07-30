@@ -12,9 +12,9 @@
     {%- endif -%}
     <li class="page-item {% unless paginator.next_page %}disabled{% endunless %}">
       <a class="page-link" href="{{ paginator.next_page_path | relative_url }}">{{ paginator.next_page }}</a></li>
-    {%- unless paginator.next_page == paginator.last_page -%}
-      <li class="page-item"><a class="page-link" href="{{ paginator.last_page_path | relative_url }}" title="Page {{ paginator.last_page }}">{{ paginator.last_page }}</a></li>
-    {%- endunless -%}
+    {%- if paginator.next_page < paginator.last_page -%}
+      <li class="page-item"><a class="page-link" href="{{ paginator.last_page_path | relative_url }}" title="X Page {{ paginator.last_page }}">{{ paginator.last_page }}</a></li>
+    {%- endif -%}
   </ul>
 </nav>
 {%- endif -%}
