@@ -219,6 +219,11 @@ defaults:
       title: Logic Seminar
       speaker: TBC
   - scope:
+      path: "nol/"
+      type: "posts"
+    values:
+      location: Online
+  - scope:
       path: "events/"
       type: "posts"
     values:

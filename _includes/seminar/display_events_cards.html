@@ -22,7 +22,8 @@
                   date = post.date
                   end-date = post.date-end
                   format = "short"
-                  %}
+                  -%}
+                {%- if post.location -%}, {{ post.location }}{%- endif %}
                 {% if categories != "" %}
                   &nbsp; &middot; 
                   {% for category in post.categories %}

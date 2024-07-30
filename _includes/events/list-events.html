@@ -54,7 +54,8 @@
             start-date = event.date-start
             date = event.date
             end-date = event.date-end
-            %}
+            -%}
+          {%- if event.location -%}, {{ event.location }}{%- endif %}
           <!-- {% if tags != "" %}
           &nbsp; &middot; &nbsp;
             {% for tag in event.tags %}
